@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+30-1784d801-SNAPSHOT - org.bitcoins.core.bloom.BloomFilter</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 30 - 1784d801 - SNAPSHOT - org.bitcoins.core.bloom.BloomFilter" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 30 1784d801 SNAPSHOT org.bitcoins.core.bloom.BloomFilter" />
+          <title>Bitcoin-S 0.1.0+31-888e16c8-SNAPSHOT - org.bitcoins.core.bloom.BloomFilter</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 31 - 888e16c8 - SNAPSHOT - org.bitcoins.core.bloom.BloomFilter" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 31 888e16c8 SNAPSHOT org.bitcoins.core.bloom.BloomFilter" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+30-1784d801-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+31-888e16c8-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -135,8 +135,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="org.bitcoins.core">core</a></dd></dl></div>
     </li><li class="current-entities indented4">
                         <a class="object" href="BloomFilter$.html" title=""></a>
-                        <a class="class" href="" title="Created by chris on 8/2/16."></a>
-                        <a href="" title="Created by chris on 8/2/16.">BloomFilter</a>
+                        <a class="class" href="" title="Implements a bloom filter that abides by the semantics of BIP37"></a>
+                        <a href="" title="Implements a bloom filter that abides by the semantics of BIP37">BloomFilter</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="BloomFlag$.html" title=""></a>
                         <a class="trait" href="BloomFlag.html" title="Created by chris on 8/3/16."></a>
@@ -183,11 +183,8 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Created by chris on 8/2/16.
-Implements a bloom fitler that abides by the semantics of
-<a href="https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki" target="_blank">BIP37</a>.
-<a href="https://github.com/bitcoin/bitcoin/blob/master/src/bloom.h" target="_blank">https://github.com/bitcoin/bitcoin/blob/master/src/bloom.h</a>
-</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implements a bloom filter that abides by the semantics of BIP37
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki" target="_blank">BIP37</a>.</p></span><span class="cmt"><p><a href="https://github.com/bitcoin/bitcoin/blob/master/src/bloom.h" target="_blank">Bitcoin Core bloom.h</a></p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -289,9 +286,7 @@ Implements a bloom fitler that abides by the semantics of
       </span>
       
       <p class="shortcomment cmt">A set of flags that control how outpoints corresponding to a matched pubkey script are added to the filter.</p><div class="fullcomment"><div class="comment cmt"><p>A set of flags that control how outpoints corresponding to a matched pubkey script are added to the filter.
-See the 'Comparing Transaction Elements to a Bloom Filter' section in this
-<a href="https://bitcoin.org/en/developer-reference#filterload" target="_blank">link</a>
-</p></div></div>
+See the 'Comparing Transaction Elements to a Bloom Filter' section in this</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#filterload" target="_blank">link</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.bloom.BloomFilter#hashFuncs" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="hashFuncs:org.bitcoins.core.number.UInt32"></a><a id="hashFuncs:UInt32"></a>
       <span class="permalink">
@@ -428,6 +423,8 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
@@ -497,7 +494,23 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
         <span class="name">contains</span><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
-      <p class="shortcomment cmt">Checks if <code>data</code> contains the given sequence of bytes</p>
+      <p class="shortcomment cmt">Checks if the filter contains the given bytes</p>
+    </li><li name="org.bitcoins.core.bloom.BloomFilter#contains" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="contains(pubkey:org.bitcoins.core.crypto.ECPublicKey):Boolean"></a><a id="contains(ECPublicKey):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/bloom/BloomFilter.html#contains(pubkey:org.bitcoins.core.crypto.ECPublicKey):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">contains</span><span class="params">(<span name="pubkey">pubkey: <a href="../crypto/ECPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ECPublicKey">ECPublicKey</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Checks if the filter contains the given public key</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -530,28 +543,6 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/bloom/BloomFilter.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -564,11 +555,13 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#java.lang.Class" class="extype" name="java.lang.Class">Class</a>[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/11/docs/api/java/lang/Class.html#java.lang.Class" class="extype" name="java.lang.Class">Class</a>[_]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -589,6 +582,8 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="org.bitcoins.core.protocol.NetworkElement#hex" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hex:String"></a>
@@ -606,6 +601,31 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
       </span>
       
       <p class="shortcomment cmt">The hexadecimal representation of the NetworkElement</p><div class="fullcomment"><div class="comment cmt"><p>The hexadecimal representation of the NetworkElement</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a></dd></dl></div>
+    </li><li name="org.bitcoins.core.bloom.BloomFilter#insert" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="insert(pubkey:org.bitcoins.core.crypto.ECPublicKey):org.bitcoins.core.bloom.BloomFilter"></a><a id="insert(ECPublicKey):BloomFilter"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/bloom/BloomFilter.html#insert(pubkey:org.bitcoins.core.crypto.ECPublicKey):org.bitcoins.core.bloom.BloomFilter" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">insert</span><span class="params">(<span name="pubkey">pubkey: <a href="../crypto/ECPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ECPublicKey">ECPublicKey</a></span>)</span><span class="result">: <a href="" class="extype" name="org.bitcoins.core.bloom.BloomFilter">BloomFilter</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Inserts a public key and it's corresponding hash into the bloom filter
+</p><div class="fullcomment"><div class="comment cmt"><p>Inserts a public key and it's corresponding hash into the bloom filter
+</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>The rationale for inserting both the pubkey and its hash is that
+      in most cases where you have an &quot;interesting pubkey&quot; that you
+      want to track on the P2P network what you really need to do is
+      insert the hash of the public key, as that is what appears on
+      the blockchain and that nodes you query with bloom filters will
+      see.</p></span></dd><dt>See also</dt><dd><span class="cmt"><p>The
+      <a href="https://github.com/bitcoinj/bitcoinj/blob/806afa04419ebdc3c15d5adf065979aa7303e7f6/core/src/main/java/org/bitcoinj/core/BloomFilter.java#L244" target="_blank">BitcoinJ</a>
+      implementation of this function</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.bloom.BloomFilter#insert" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="insert(outPoint:org.bitcoins.core.protocol.transaction.TransactionOutPoint):org.bitcoins.core.bloom.BloomFilter"></a><a id="insert(TransactionOutPoint):BloomFilter"></a>
       <span class="permalink">
@@ -621,7 +641,7 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
         <span class="name">insert</span><span class="params">(<span name="outPoint">outPoint: <a href="../protocol/transaction/TransactionOutPoint.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutPoint">TransactionOutPoint</a></span>)</span><span class="result">: <a href="" class="extype" name="org.bitcoins.core.bloom.BloomFilter">BloomFilter</a></span>
       </span>
       
-      <p class="shortcomment cmt">Inserts a <a href="../protocol/transaction/TransactionOutPoint.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutPoint">TransactionOutPoint</a> into <code>data</code></p>
+      <p class="shortcomment cmt">Inserts a transaction outpoint into the filter</p>
     </li><li name="org.bitcoins.core.bloom.BloomFilter#insert" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="insert(hash:org.bitcoins.core.crypto.HashDigest):org.bitcoins.core.bloom.BloomFilter"></a><a id="insert(HashDigest):BloomFilter"></a>
       <span class="permalink">
@@ -637,7 +657,7 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
         <span class="name">insert</span><span class="params">(<span name="hash">hash: <a href="../crypto/HashDigest.html" class="extype" name="org.bitcoins.core.crypto.HashDigest">HashDigest</a></span>)</span><span class="result">: <a href="" class="extype" name="org.bitcoins.core.bloom.BloomFilter">BloomFilter</a></span>
       </span>
       
-      <p class="shortcomment cmt">Inserts a <a href="../crypto/HashDigest.html" class="extype" name="org.bitcoins.core.crypto.HashDigest">HashDigest</a> into <code>data</code></p>
+      <p class="shortcomment cmt">Inserts a hash into the filter</p>
     </li><li name="org.bitcoins.core.bloom.BloomFilter#insert" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="insert(bytes:scodec.bits.ByteVector):org.bitcoins.core.bloom.BloomFilter"></a><a id="insert(ByteVector):BloomFilter"></a>
       <span class="permalink">
@@ -685,7 +705,7 @@ See the 'Comparing Transaction Elements to a Bloom Filter' section in this
         <span class="name">insertHashes</span><span class="params">(<span name="hashes">hashes: <span class="extype" name="scala.Seq">Seq</span>[<a href="../crypto/HashDigest.html" class="extype" name="org.bitcoins.core.crypto.HashDigest">HashDigest</a>]</span>)</span><span class="result">: <a href="" class="extype" name="org.bitcoins.core.bloom.BloomFilter">BloomFilter</a></span>
       </span>
       
-      <p class="shortcomment cmt">Inserts a sequence of <a href="../crypto/HashDigest.html" class="extype" name="org.bitcoins.core.crypto.HashDigest">HashDigest</a>'s into our BloomFilter</p>
+      <p class="shortcomment cmt">Inserts a sequence of hashes into the filter</p>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -771,6 +791,8 @@ for exact details on what is relevant to a bloom filter and what is not relevant
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -789,6 +811,8 @@ for exact details on what is relevant to a bloom filter and what is not relevant
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="org.bitcoins.core.protocol.NetworkElement#size" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -835,7 +859,7 @@ for exact details on what is relevant to a bloom filter and what is not relevant
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#java.lang.String" class="extype" name="java.lang.String">String</a></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/11/docs/api/java/lang/String.html#java.lang.String" class="extype" name="java.lang.String">String</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -878,28 +902,6 @@ for the exact details on what parts of a transaction is added to the bloom filte
 See <a href="https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki#filter-matching-algorithm" target="_blank">BIP37</a>
 for the exact rules on updating a bloom filter with this flag set
 </p>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/bloom/BloomFilter.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
@@ -946,13 +948,64 @@ for the exact rules on updating a bloom filter with this flag set
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/bloom/BloomFilter.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
     </li>
               </ol>
             </div>
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/bloom/BloomFilter.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
