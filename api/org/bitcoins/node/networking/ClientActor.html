@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+31-888e16c8-SNAPSHOT - org.bitcoins.node.networking.ClientActor</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 31 - 888e16c8 - SNAPSHOT - org.bitcoins.node.networking.ClientActor" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 31 888e16c8 SNAPSHOT org.bitcoins.node.networking.ClientActor" />
+          <title>Bitcoin-S 0.1.0+34-e4d26e71-SNAPSHOT - org.bitcoins.node.networking.ClientActor</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 34 - e4d26e71 - SNAPSHOT - org.bitcoins.node.networking.ClientActor" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 34 e4d26e71 SNAPSHOT org.bitcoins.node.networking.ClientActor" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+31-888e16c8-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+34-e4d26e71-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -188,7 +188,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">ClientActor</span><span class="result"> extends <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <span class="name">ClientActor</span><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
       </span>
       </h4>
 
@@ -199,7 +199,7 @@ relaying messages and closing a connection to our peer on
 the p2p network. This is the actor that directly interacts
 with the p2p network. It's responsibly is to deal with low
 level <span class="extype" name="Tcp.Message">Tcp.Message</span>.</p><p>If the <a href="Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> receives a <span class="extype" name="NetworkMessage">NetworkMessage</span>, from a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a>
-it serializes the message to it to a <a href="http://doc.akka.io/api/akka/2.5.21/akka/util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> and then sends it to the <a href="#manager:akka.actor.ActorRef" class="extmbr" name="org.bitcoins.node.networking.ClientActor#manager">manager</a>
+it serializes the message to it to a <a href="https://doc.akka.io/api/akka/2.5.23/akka/util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> and then sends it to the <a href="#manager:akka.actor.ActorRef" class="extmbr" name="org.bitcoins.node.networking.ClientActor#manager">manager</a>
 which streams the data to our peer on the bitcoin network.</p><p>If the <a href="Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> receives a <span class="extype" name="Tcp.Received">Tcp.Received</span> message, it means we have received
 a message from our peer on the bitcoin p2p network. This means we try to parse
 the <span class="extype" name="ByteString">ByteString</span> into a <span class="extype" name="NetworkMessage">NetworkMessage</span>. If we successfully parse the message
@@ -213,7 +213,7 @@ the bytes and wait for the rest of them to be sent.
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a>, <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a>, <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a>, <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -399,7 +399,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">aroundPostRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">aroundPostRestart</span><span class="params">(<span name="reason">reason: <a href="../../../../scala/index.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../akka/index.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
@@ -437,7 +437,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">aroundPreRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="message">message: <a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">aroundPreRestart</span><span class="params">(<span name="reason">reason: <a href="../../../../scala/index.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>, <span name="message">message: <a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../akka/index.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
@@ -510,7 +510,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -536,7 +536,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">context</span><span class="result">: <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/ActorContext.html#akka.actor.ActorContext" class="extype" name="akka.actor.ActorContext">ActorContext</a></span>
+        <span class="name">context</span><span class="result">: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorContext.html#akka.actor.ActorContext" class="extype" name="akka.actor.ActorContext">ActorContext</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -552,7 +552,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.8/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -658,7 +658,7 @@ peer on the p2p network. This is mostly likely a <a href="peer/PeerMessageSender
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">manager</span><span class="result">: <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>
+        <span class="name">manager</span><span class="result">: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>
       </span>
       
       <p class="shortcomment cmt">The manager is an actor that handles the underlying low level I/O resources (selectors, channels)
@@ -675,7 +675,7 @@ and instantiates workers for specific tasks, such as listening to incoming conne
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.8/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -751,7 +751,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">postRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">postRestart</span><span class="params">(<span name="reason">reason: <a href="../../../../scala/index.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
@@ -795,7 +795,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">preRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="message">message: <a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">preRestart</span><span class="params">(<span name="reason">reason: <a href="../../../../scala/index.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>, <span name="message">message: <a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
@@ -855,7 +855,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">self</span><span class="result">: <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>
+        <span class="name">self</span><span class="result">: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -871,7 +871,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sender</span><span class="params">()</span><span class="result">: <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>
+        <span class="name">sender</span><span class="params">()</span><span class="result">: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -887,7 +887,7 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">supervisorStrategy</span><span class="result">: <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/SupervisorStrategy.html#akka.actor.SupervisorStrategy" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a></span>
+        <span class="name">supervisorStrategy</span><span class="result">: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/SupervisorStrategy.html#akka.actor.SupervisorStrategy" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
@@ -1049,9 +1049,9 @@ i.e. <a href="../../core/config/MainNet.html" class="extype" name="org.bitcoins.
         <div class="parent" name="org.bitcoins.core.util.BitcoinSLogger">
               <h3>Inherited from <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></h3>
             </div><div class="parent" name="akka.actor.Actor">
-              <h3>Inherited from <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a></h3>
+              <h3>Inherited from <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></h3>
+              <h3>Inherited from <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.8/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></h3>
             </div>

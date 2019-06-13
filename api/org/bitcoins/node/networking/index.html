@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+31-888e16c8-SNAPSHOT - org.bitcoins.node.networking</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 31 - 888e16c8 - SNAPSHOT - org.bitcoins.node.networking" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 31 888e16c8 SNAPSHOT org.bitcoins.node.networking" />
+          <title>Bitcoin-S 0.1.0+34-e4d26e71-SNAPSHOT - org.bitcoins.node.networking</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 34 - e4d26e71 - SNAPSHOT - org.bitcoins.node.networking" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 34 e4d26e71 SNAPSHOT org.bitcoins.node.networking" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+31-888e16c8-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+34-e4d26e71-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -352,7 +352,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Created by chris on 7/10/16." href="BlockActor.html"><span class="name">BlockActor</span></a><span class="result"> extends <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <a title="Created by chris on 7/10/16." href="BlockActor.html"><span class="name">BlockActor</span></a><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
       </span>
       
       <p class="shortcomment cmt">Created by chris on 7/10/16.</p>
@@ -368,7 +368,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Client.html"><span class="name">Client</span></a><span class="params">(<span name="actor">actor: <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="Client.html"><span class="name">Client</span></a><span class="params">(<span name="actor">actor: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRef.html#akka.actor.ActorRef" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="peer">peer: <a href="../models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
@@ -384,7 +384,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Created by chris on 6/6/16." href="ClientActor.html"><span class="name">ClientActor</span></a><span class="result"> extends <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <a title="Created by chris on 6/6/16." href="ClientActor.html"><span class="name">ClientActor</span></a><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
       </span>
       
       <p class="shortcomment cmt">Created by chris on 6/6/16.</p><div class="fullcomment"><div class="comment cmt"><p>Created by chris on 6/6/16.
@@ -393,7 +393,7 @@ relaying messages and closing a connection to our peer on
 the p2p network. This is the actor that directly interacts
 with the p2p network. It's responsibly is to deal with low
 level <span class="extype" name="Tcp.Message">Tcp.Message</span>.</p><p>If the <a href="Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> receives a <span class="extype" name="NetworkMessage">NetworkMessage</span>, from a <a href="peer/PeerMessageSender.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageSender">org.bitcoins.node.networking.peer.PeerMessageSender</a>
-it serializes the message to it to a <a href="http://doc.akka.io/api/akka/2.5.21/akka/util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> and then sends it to the <a href="ClientActor.html#manager:akka.actor.ActorRef" class="extmbr" name="org.bitcoins.node.networking.ClientActor#manager">manager</a>
+it serializes the message to it to a <a href="https://doc.akka.io/api/akka/2.5.23/akka/util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> and then sends it to the <a href="ClientActor.html#manager:akka.actor.ActorRef" class="extmbr" name="org.bitcoins.node.networking.ClientActor#manager">manager</a>
 which streams the data to our peer on the bitcoin network.</p><p>If the <a href="Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> receives a <span class="extype" name="Tcp.Received">Tcp.Received</span> message, it means we have received
 a message from our peer on the bitcoin p2p network. This means we try to parse
 the <span class="extype" name="ByteString">ByteString</span> into a <span class="extype" name="NetworkMessage">NetworkMessage</span>. If we successfully parse the message
@@ -416,7 +416,7 @@ the bytes and wait for the rest of them to be sent.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Created by chris on 8/30/16." href="PaymentActor.html"><span class="name">PaymentActor</span></a><span class="result"> extends <a href="http://doc.akka.io/api/akka/2.5.21/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+        <a title="Created by chris on 8/30/16." href="PaymentActor.html"><span class="name">PaymentActor</span></a><span class="result"> extends <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/Actor.html#akka.actor.Actor" class="extype" name="akka.actor.Actor">Actor</a> with <a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
       </span>
       
       <p class="shortcomment cmt">Created by chris on 8/30/16.</p><div class="fullcomment"><div class="comment cmt"><p>Created by chris on 8/30/16.
