@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+39-d69555e0-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageSender</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 39 - d69555e0 - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageSender" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 39 d69555e0 SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageSender" />
+          <title>Bitcoin-S 0.1.0+41-90b9b6aa-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageSender</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 41 - 90b9b6aa - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageSender" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 41 90b9b6aa SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageSender" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+39-d69555e0-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+41-90b9b6aa-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -154,7 +154,7 @@
                         <a class="class" href="ControlMessageHandler.html" title=""></a>
                         <a href="ControlMessageHandler.html" title="">ControlMessageHandler</a>
                       </li><li class="current-entities indented5">
-                        <span class="separator"></span>
+                        <a class="object" href="DataMessageHandler$.html" title=""></a>
                         <a class="class" href="DataMessageHandler.html" title="This actor is meant to handle a org.bitcoins.node.messages.DataPayload that a peer to sent to us on the p2p network, for instance, if we a receive a HeadersMessage we should store those headers in our database"></a>
                         <a href="DataMessageHandler.html" title="This actor is meant to handle a org.bitcoins.node.messages.DataPayload that a peer to sent to us on the p2p network, for instance, if we a receive a HeadersMessage we should store those headers in our database">DataMessageHandler</a>
                       </li><li class="current-entities indented5">
@@ -175,8 +175,8 @@
                         <a href="PeerMessageReceiverState.html" title="">PeerMessageReceiverState</a>
                       </li><li class="current-entities indented5">
                         <a class="object" href="PeerMessageSender$.html" title=""></a>
-                        <a class="class" href="" title="Created by chris on 6/7/16."></a>
-                        <a href="" title="Created by chris on 6/7/16.">PeerMessageSender</a>
+                        <a class="class" href="" title=""></a>
+                        <a href="" title="">PeerMessageSender</a>
                       </li>
               </ul>
             </div>
@@ -207,13 +207,7 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Created by chris on 6/7/16.
-This actor is the middle man between our <a href="../Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> and higher level actors such as
-<a href="../BlockActor.html" class="extype" name="org.bitcoins.node.networking.BlockActor">org.bitcoins.node.networking.BlockActor</a>. When it receives a message, it tells <a href="../Client.html" class="extype" name="org.bitcoins.node.networking.Client">Client</a> to create connection to a peer,
-then it exchanges <span class="extype" name="VersionMessage">VersionMessage</span>, <span class="extype" name="VerAckMessage">VerAckMessage</span> and <span class="extype" name="org.bitcoins.node.messages.PingMessage">org.bitcoins.node.messages.PingMessage</span>/<span class="extype" name="PongMessage">PongMessage</span> message
-with our peer on the network. When the Client finally responds to the <span class="extype" name="NetworkMessage">NetworkMessage</span> we originally
-sent it sends that <span class="extype" name="NetworkMessage">NetworkMessage</span> back to the actor that requested it.
-</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -394,7 +388,7 @@ sent it sends that <span class="extype" name="NetworkMessage">NetworkMessage</sp
         <span class="name">connect</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <p class="shortcomment cmt">Initiates a connection with the given <span class="extype" name="Peer">Peer</span></p>
+      <p class="shortcomment cmt">Initiates a connection with the given peer</p>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageSender#disconnect" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="disconnect():Unit"></a>
       <span class="permalink">
@@ -410,7 +404,7 @@ sent it sends that <span class="extype" name="NetworkMessage">NetworkMessage</sp
         <span class="name">disconnect</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Disconnects the given peer</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">

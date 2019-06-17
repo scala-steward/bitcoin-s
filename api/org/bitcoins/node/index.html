@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+39-d69555e0-SNAPSHOT - org.bitcoins.node</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 39 - d69555e0 - SNAPSHOT - org.bitcoins.node" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 39 d69555e0 SNAPSHOT org.bitcoins.node" />
+          <title>Bitcoin-S 0.1.0+41-90b9b6aa-SNAPSHOT - org.bitcoins.node</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 41 - 90b9b6aa - SNAPSHOT - org.bitcoins.node" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 41 90b9b6aa SNAPSHOT org.bitcoins.node" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+39-d69555e0-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+41-90b9b6aa-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -349,6 +349,10 @@
                         <span class="separator"></span>
                         <a class="class" href="SpvNode.html" title=""></a>
                         <a href="SpvNode.html" title="">SpvNode</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SpvNodeCallbacks$.html" title=""></a>
+                        <a class="class" href="SpvNodeCallbacks.html" title="Callbacks for responding to events in the SPV node."></a>
+                        <a href="SpvNodeCallbacks.html" title="Callbacks for responding to events in the SPV node.">SpvNodeCallbacks</a>
                       </li><li name="org.bitcoins.rpc" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="rpc"></a><a id="rpc:rpc"></a>
       <span class="permalink">
@@ -504,10 +508,28 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="SpvNode.html"><span class="name">SpvNode</span></a><span class="params">(<span name="peer">peer: <a href="models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="chainApi">chainApi: <a href="../chain/api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>, <span name="nodeAppConfig">nodeAppConfig: <a href="config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>, <span name="chainAppConfig">chainAppConfig: <a href="../chain/config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="SpvNode.html"><span class="name">SpvNode</span></a><span class="params">(<span name="peer">peer: <a href="models/Peer.html" class="extype" name="org.bitcoins.node.models.Peer">Peer</a></span>, <span name="chainApi">chainApi: <a href="../chain/api/ChainApi.html" class="extype" name="org.bitcoins.chain.api.ChainApi">ChainApi</a></span>, <span name="bloomFilter">bloomFilter: <a href="../core/bloom/BloomFilter.html" class="extype" name="org.bitcoins.core.bloom.BloomFilter">BloomFilter</a></span>, <span name="callbacks">callbacks: <a href="SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a> = <span class="symbol"><span class="name"><a href="SpvNodeCallbacks$.html">SpvNodeCallbacks.empty</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="system">system: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorSystem.html#akka.actor.ActorSystem" class="extype" name="akka.actor.ActorSystem">ActorSystem</a></span>, <span name="nodeAppConfig">nodeAppConfig: <a href="config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>, <span name="chainAppConfig">chainAppConfig: <a href="../chain/config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result"> extends <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
+    </li><li name="org.bitcoins.node.SpvNodeCallbacks" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SpvNodeCallbacksextendsProductwithSerializable"></a><a id="SpvNodeCallbacks:SpvNodeCallbacks"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/node/index.html#SpvNodeCallbacksextendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="Callbacks for responding to events in the SPV node." href="SpvNodeCallbacks.html"><span class="name">SpvNodeCallbacks</span></a><span class="params">(<span name="onTxReceived">onTxReceived: <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="networking/peer/DataMessageHandler$.html#OnTxReceived=org.bitcoins.core.protocol.transaction.Transaction=&gt;Unit" class="extmbr" name="org.bitcoins.node.networking.peer.DataMessageHandler.OnTxReceived">OnTxReceived</a>] = <span class="symbol"><span class="name"><a href="../../../scala/index.html">Seq.empty</a></span></span></span>, <span name="onBlockReceived">onBlockReceived: <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="networking/peer/DataMessageHandler$.html#OnBlockReceived=org.bitcoins.core.protocol.blockchain.Block=&gt;Unit" class="extmbr" name="org.bitcoins.node.networking.peer.DataMessageHandler.OnBlockReceived">OnBlockReceived</a>] = <span class="symbol"><span class="name"><a href="../../../scala/index.html">Seq.empty</a></span></span></span>, <span name="onMerkleBlockReceived">onMerkleBlockReceived: <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="networking/peer/DataMessageHandler$.html#OnMerkleBlockReceived=org.bitcoins.core.protocol.blockchain.MerkleBlock=&gt;Unit" class="extmbr" name="org.bitcoins.node.networking.peer.DataMessageHandler.OnMerkleBlockReceived">OnMerkleBlockReceived</a>] = <span class="symbol"><span class="name"><a href="../../../scala/index.html">Seq.empty</a></span></span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Callbacks for responding to events in the SPV node.</p><div class="fullcomment"><div class="comment cmt"><p>Callbacks for responding to events in the SPV node.
+The approriate callback is executed whenver the node receives
+a <code>getdata</code> message matching it.</p></div></div>
     </li></ol>
             </div>
 
@@ -529,6 +551,22 @@
       </span>
       <span class="symbol">
         <a title="" href="Main$.html"><span class="name">Main</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/App.html#scala.App" class="extype" name="scala.App">App</a> with <a href="../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.node.SpvNodeCallbacks" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SpvNodeCallbacks"></a><a id="SpvNodeCallbacks:SpvNodeCallbacks"></a>
+      <span class="permalink">
+      <a href="../../../org/bitcoins/node/index.html#SpvNodeCallbacks" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="SpvNodeCallbacks$.html"><span class="name">SpvNodeCallbacks</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       

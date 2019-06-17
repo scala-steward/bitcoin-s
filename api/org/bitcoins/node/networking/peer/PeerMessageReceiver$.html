@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+39-d69555e0-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 39 - d69555e0 - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 39 d69555e0 SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageReceiver" />
+          <title>Bitcoin-S 0.1.0+41-90b9b6aa-SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 41 - 90b9b6aa - SNAPSHOT - org.bitcoins.node.networking.peer.PeerMessageReceiver" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 41 90b9b6aa SNAPSHOT org.bitcoins.node.networking.peer.PeerMessageReceiver" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+39-d69555e0-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+41-90b9b6aa-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -154,7 +154,7 @@
                         <a class="class" href="ControlMessageHandler.html" title=""></a>
                         <a href="ControlMessageHandler.html" title="">ControlMessageHandler</a>
                       </li><li class="current-entities indented5">
-                        <span class="separator"></span>
+                        <a class="object" href="DataMessageHandler$.html" title=""></a>
                         <a class="class" href="DataMessageHandler.html" title="This actor is meant to handle a org.bitcoins.node.messages.DataPayload that a peer to sent to us on the p2p network, for instance, if we a receive a HeadersMessage we should store those headers in our database"></a>
                         <a href="DataMessageHandler.html" title="This actor is meant to handle a org.bitcoins.node.messages.DataPayload that a peer to sent to us on the p2p network, for instance, if we a receive a HeadersMessage we should store those headers in our database">DataMessageHandler</a>
                       </li><li class="current-entities indented5">
@@ -175,8 +175,8 @@
                         <a href="PeerMessageReceiverState.html" title="">PeerMessageReceiverState</a>
                       </li><li class="current-entities indented5">
                         <a class="object" href="PeerMessageSender$.html" title=""></a>
-                        <a class="class" href="PeerMessageSender.html" title="Created by chris on 6/7/16."></a>
-                        <a href="PeerMessageSender.html" title="Created by chris on 6/7/16.">PeerMessageSender</a>
+                        <a class="class" href="PeerMessageSender.html" title=""></a>
+                        <a href="PeerMessageSender.html" title="">PeerMessageSender</a>
                       </li>
               </ul>
             </div>
@@ -348,9 +348,9 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(state:org.bitcoins.node.networking.peer.PeerMessageReceiverState)(implicitref:akka.actor.ActorRefFactory,implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="apply(PeerMessageReceiverState)(ActorRefFactory,NodeAppConfig,ChainAppConfig):PeerMessageReceiver"></a>
+      <a id="apply(state:org.bitcoins.node.networking.peer.PeerMessageReceiverState,callbacks:org.bitcoins.node.SpvNodeCallbacks)(implicitref:akka.actor.ActorRefFactory,implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="apply(PeerMessageReceiverState,SpvNodeCallbacks)(ActorRefFactory,NodeAppConfig,ChainAppConfig):PeerMessageReceiver"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver$.html#apply(state:org.bitcoins.node.networking.peer.PeerMessageReceiverState)(implicitref:akka.actor.ActorRefFactory,implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver$.html#apply(state:org.bitcoins.node.networking.peer.PeerMessageReceiverState,callbacks:org.bitcoins.node.SpvNodeCallbacks)(implicitref:akka.actor.ActorRefFactory,implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig):org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -359,7 +359,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="state">state: <a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ref">ref: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRefFactory.html#akka.actor.ActorRefFactory" class="extype" name="akka.actor.ActorRefFactory">ActorRefFactory</a></span>, <span name="nodeAppConfig">nodeAppConfig: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>, <span name="chainAppConfig">chainAppConfig: <a href="../../../chain/config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result">: <a href="PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
+        <span class="name">apply</span><span class="params">(<span name="state">state: <a href="PeerMessageReceiverState.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiverState">PeerMessageReceiverState</a></span>, <span name="callbacks">callbacks: <a href="../../SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a> = <span class="symbol"><span class="name"><a href="../../../../index.html">SpvNodeCallbacks.empty</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ref">ref: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRefFactory.html#akka.actor.ActorRefFactory" class="extype" name="akka.actor.ActorRefFactory">ActorRefFactory</a></span>, <span name="nodeAppConfig">nodeAppConfig: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>, <span name="chainAppConfig">chainAppConfig: <a href="../../../chain/config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>)</span><span class="result">: <a href="PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
       </span>
       
       
@@ -512,9 +512,9 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.bitcoins.node.networking.peer.PeerMessageReceiver#newReceiver" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newReceiver(implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig,implicitref:akka.actor.ActorRefFactory):org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="newReceiver(NodeAppConfig,ChainAppConfig,ActorRefFactory):PeerMessageReceiver"></a>
+      <a id="newReceiver(callbacks:org.bitcoins.node.SpvNodeCallbacks)(implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig,implicitref:akka.actor.ActorRefFactory):org.bitcoins.node.networking.peer.PeerMessageReceiver"></a><a id="newReceiver(SpvNodeCallbacks)(NodeAppConfig,ChainAppConfig,ActorRefFactory):PeerMessageReceiver"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver$.html#newReceiver(implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig,implicitref:akka.actor.ActorRefFactory):org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
+      <a href="../../../../../org/bitcoins/node/networking/peer/PeerMessageReceiver$.html#newReceiver(callbacks:org.bitcoins.node.SpvNodeCallbacks)(implicitnodeAppConfig:org.bitcoins.node.config.NodeAppConfig,implicitchainAppConfig:org.bitcoins.chain.config.ChainAppConfig,implicitref:akka.actor.ActorRefFactory):org.bitcoins.node.networking.peer.PeerMessageReceiver" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -523,7 +523,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newReceiver</span><span class="params">(<span class="implicit">implicit </span><span name="nodeAppConfig">nodeAppConfig: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>, <span name="chainAppConfig">chainAppConfig: <a href="../../../chain/config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>, <span name="ref">ref: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRefFactory.html#akka.actor.ActorRefFactory" class="extype" name="akka.actor.ActorRefFactory">ActorRefFactory</a></span>)</span><span class="result">: <a href="PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
+        <span class="name">newReceiver</span><span class="params">(<span name="callbacks">callbacks: <a href="../../SpvNodeCallbacks.html" class="extype" name="org.bitcoins.node.SpvNodeCallbacks">SpvNodeCallbacks</a> = <span class="symbol"><span class="name"><a href="../../../../index.html">SpvNodeCallbacks.empty</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="nodeAppConfig">nodeAppConfig: <a href="../../config/NodeAppConfig.html" class="extype" name="org.bitcoins.node.config.NodeAppConfig">NodeAppConfig</a></span>, <span name="chainAppConfig">chainAppConfig: <a href="../../../chain/config/ChainAppConfig.html" class="extype" name="org.bitcoins.chain.config.ChainAppConfig">ChainAppConfig</a></span>, <span name="ref">ref: <a href="https://doc.akka.io/api/akka/2.5.23/akka/actor/ActorRefFactory.html#akka.actor.ActorRefFactory" class="extype" name="akka.actor.ActorRefFactory">ActorRefFactory</a></span>)</span><span class="result">: <a href="PeerMessageReceiver.html" class="extype" name="org.bitcoins.node.networking.peer.PeerMessageReceiver">PeerMessageReceiver</a></span>
       </span>
       
       
