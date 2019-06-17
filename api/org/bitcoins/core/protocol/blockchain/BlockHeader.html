@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+42-5ed0f6d3-SNAPSHOT - org.bitcoins.core.protocol.blockchain.BlockHeader</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 42 - 5ed0f6d3 - SNAPSHOT - org.bitcoins.core.protocol.blockchain.BlockHeader" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 42 5ed0f6d3 SNAPSHOT org.bitcoins.core.protocol.blockchain.BlockHeader" />
+          <title>Bitcoin-S 0.1.0+43-02560ebb-SNAPSHOT - org.bitcoins.core.protocol.blockchain.BlockHeader</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 43 - 02560ebb - SNAPSHOT - org.bitcoins.core.protocol.blockchain.BlockHeader" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 43 02560ebb SNAPSHOT org.bitcoins.core.protocol.blockchain.BlockHeader" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+42-5ed0f6d3-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+43-02560ebb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -163,8 +163,8 @@
                         <a href="Block.html" title="Created by chris on 5/19/16.">Block</a>
                       </li><li class="current-entities indented5">
                         <a class="object" href="BlockHeader$.html" title="Companion object used for creating BlockHeaders"></a>
-                        <a class="trait" href="" title="Created by chris on 5/19/16."></a>
-                        <a href="" title="Created by chris on 5/19/16.">BlockHeader</a>
+                        <a class="trait" href="" title="Nodes collect new transactions into a block, hash them into a hash tree, and scan through nonce values to make the block's hash satisfy proof-of-work requirements."></a>
+                        <a href="" title="Nodes collect new transactions into a block, hash them into a hash tree, and scan through nonce values to make the block's hash satisfy proof-of-work requirements.">BlockHeader</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
                         <a class="class" href="ChainParams.html" title="Created by chris on 5/22/16."></a>
@@ -219,18 +219,14 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Created by chris on 5/19/16.
-Nodes collect new transactions into a block, hash them into a hash tree,
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Nodes collect new transactions into a block, hash them into a hash tree,
 and scan through nonce values to make the block's hash satisfy proof-of-work
 requirements.  When they solve the proof-of-work, they broadcast the block
 to everyone and the block is added to the block chain.  The first transaction
 in the block is a special one that creates a new coin owned by the creator
-of the block.
-Bitcoin Developer reference link
-https://bitcoin.org/en/developer-reference#block-headers
-Bitcoin Core implementation:
-https://github.com/bitcoin/bitcoin/blob/master/src/primitives/block.h#L20
-</p></div><div class="toggleContainer block">
+of the block.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>Bitcoin Developer reference:
+https://bitcoin.org/en/developer-reference#block-headers</p></span><span class="cmt"><p>Bitcoin Core implementation:
+https://github.com/bitcoin/bitcoin/blob/master/src/primitives/block.h#L20</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -299,11 +295,10 @@ https://github.com/bitcoin/bitcoin/blob/master/src/primitives/block.h#L20
         <span class="name">merkleRootHash</span><span class="result">: <a href="../../crypto/DoubleSha256Digest.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256Digest">DoubleSha256Digest</a></span>
       </span>
       
-      <p class="shortcomment cmt">A SHA256(SHA256()) hash in internal byte order.</p><div class="fullcomment"><div class="comment cmt"><p>A SHA256(SHA256()) hash in internal byte order.
+      <p class="shortcomment cmt">A <code>SHA256(SHA256())</code> hash in internal byte order.</p><div class="fullcomment"><div class="comment cmt"><p>A <code>SHA256(SHA256())</code> hash in internal byte order.
 The merkle root is derived from the hashes of all transactions included in this block,
 ensuring that none of those transactions can be modified without modifying the header.
-https://bitcoin.org/en/developer-reference#merkle-trees
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the merkle root of the merkle tree</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the merkle root of the merkle tree</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>https://bitcoin.org/en/developer-reference#merkle-trees</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.protocol.blockchain.BlockHeader#nBits" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="nBits:org.bitcoins.core.number.UInt32"></a><a id="nBits:UInt32"></a>
       <span class="permalink">
@@ -320,9 +315,8 @@ https://bitcoin.org/en/developer-reference#merkle-trees
       </span>
       
       <p class="shortcomment cmt">An encoded version of the target threshold this block’s header hash must be less than or equal to.</p><div class="fullcomment"><div class="comment cmt"><p>An encoded version of the target threshold this block’s header hash must be less than or equal to.
-See the nBits format described below.
-https://bitcoin.org/en/developer-reference#target-nbits
-</p></div></div>
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>See the nBits format described below.
+https://bitcoin.org/en/developer-reference#target-nbits</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.protocol.blockchain.BlockHeader#nonce" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="nonce:org.bitcoins.core.number.UInt32"></a><a id="nonce:UInt32"></a>
       <span class="permalink">
@@ -396,9 +390,8 @@ Full nodes will not accept blocks with headers more than two hours in the future
       
       <p class="shortcomment cmt">The block version number indicates which set of block validation rules to follow.</p><div class="fullcomment"><div class="comment cmt"><p>The block version number indicates which set of block validation rules to follow.
 See the list of block versions below.
-See BIP9 for more information on what version number signify
-https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the version number for this block</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the version number for this block</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>BIP9 for more information on what version number signify
+https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki</p></span></dd></dl></div>
     </li></ol>
             </div>
 
@@ -708,8 +701,8 @@ See this link for more info
       
       <p class="shortcomment cmt">Returns the merkle root hash in BIG ENDIAN format.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the merkle root hash in BIG ENDIAN format. This is not compatible with the bitcoin
 protocol but it is useful for rpc clients and block explorers
-See this link for more info
-<a href="https://bitcoin.stackexchange.com/questions/2063/why-does-the-bitcoin-protocol-use-the-little-endian-notation" target="_blank">https://bitcoin.stackexchange.com/questions/2063/why-does-the-bitcoin-protocol-use-the-little-endian-notation</a></p></div></div>
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>this link for more info
+<a href="https://bitcoin.stackexchange.com/questions/2063/why-does-the-bitcoin-protocol-use-the-little-endian-notation" target="_blank">https://bitcoin.stackexchange.com/questions/2063/why-does-the-bitcoin-protocol-use-the-little-endian-notation</a></p></span></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -768,7 +761,7 @@ See this link for more info
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="org.bitcoins.core.protocol.blockchain.BlockHeader#previousBlockHashBE" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.bitcoins.core.protocol.blockchain.BlockHeader#previousBlockHashBE" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="previousBlockHashBE:org.bitcoins.core.crypto.DoubleSha256DigestBE"></a><a id="previousBlockHashBE:DoubleSha256DigestBE"></a>
       <span class="permalink">
       <a href="../../../../../org/bitcoins/core/protocol/blockchain/BlockHeader.html#previousBlockHashBE:org.bitcoins.core.crypto.DoubleSha256DigestBE" title="Permalink">
@@ -785,8 +778,10 @@ See this link for more info
       
       <p class="shortcomment cmt">Returns the big endian encoding of the previous block hash
 This is useful for using rpc and block exporers, but is NOT used in the protocol itself
-See this link for more info
-<a href="https://bitcoin.stackexchange.com/questions/2063/why-does-the-bitcoin-protocol-use-the-little-endian-notation" target="_blank">https://bitcoin.stackexchange.com/questions/2063/why-does-the-bitcoin-protocol-use-the-little-endian-notation</a></p>
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns the big endian encoding of the previous block hash
+This is useful for using rpc and block exporers, but is NOT used in the protocol itself
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>see this Stack Exchange question for more:
+<a href="https://bitcoin.stackexchange.com/questions/2063/why-does-the-bitcoin-protocol-use-the-little-endian-notation" target="_blank">https://bitcoin.stackexchange.com/questions/2063/why-does-the-bitcoin-protocol-use-the-little-endian-notation</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.protocol.NetworkElement#size" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="size:Long"></a>
       <span class="permalink">

@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+42-5ed0f6d3-SNAPSHOT - org.bitcoins.core.p2p</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 42 - 5ed0f6d3 - SNAPSHOT - org.bitcoins.core.p2p" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 42 5ed0f6d3 SNAPSHOT org.bitcoins.core.p2p" />
+          <title>Bitcoin-S 0.1.0+43-02560ebb-SNAPSHOT - org.bitcoins.core.p2p</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 43 - 02560ebb - SNAPSHOT - org.bitcoins.core.p2p" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 43 02560ebb SNAPSHOT org.bitcoins.core.p2p" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+42-5ed0f6d3-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+43-02560ebb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -355,10 +355,6 @@ key derivation paths.
                         <a class="trait" href="NetworkPayload.html" title="Trait that represents a payload for a message on the Bitcoin p2p network"></a>
                         <a href="NetworkPayload.html" title="Trait that represents a payload for a message on the Bitcoin p2p network">NetworkPayload</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="object" href="NodeNetwork$.html" title="This is a full node and can be asked for full blocks."></a>
-                        <a href="NodeNetwork$.html" title="This is a full node and can be asked for full blocks.">NodeNetwork</a>
-                      </li><li class="current-entities indented4">
                         <a class="object" href="NotFoundMessage$.html" title="The companion object factory used to create NotFoundMessages on the p2p network"></a>
                         <a class="trait" href="NotFoundMessage.html" title="The notfound message is a reply to a getdata message which requested an object the receiving node does not have available for relay."></a>
                         <a href="NotFoundMessage.html" title="The notfound message is a reply to a getdata message which requested an object the receiving node does not have available for relay.">NotFoundMessage</a>
@@ -440,8 +436,8 @@ key derivation paths.
                         <a href="SendHeadersMessage$.html" title="The sendheaders message tells the receiving peer to send new block announcements using a headers message rather than an inv message.">SendHeadersMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="ServiceIdentifier$.html" title=""></a>
-                        <a class="trait" href="ServiceIdentifier.html" title="Indicates the services that are provided by this spv node"></a>
-                        <a href="ServiceIdentifier.html" title="Indicates the services that are provided by this spv node">ServiceIdentifier</a>
+                        <a class="class" href="ServiceIdentifier.html" title="Indicates the services that are provided by a node on the P2P network"></a>
+                        <a href="ServiceIdentifier.html" title="Indicates the services that are provided by a node on the P2P network">ServiceIdentifier</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="TransactionMessage$.html" title="Companion factory object for the TransactionMessage on the p2p network"></a>
                         <a class="trait" href="TransactionMessage.html" title="The tx message transmits a single transaction in the raw transaction format."></a>
@@ -454,10 +450,6 @@ key derivation paths.
                         <span class="separator"></span>
                         <a class="trait" href="UnknownService.html" title="Designated type for any service that does not have value of 0 or 1"></a>
                         <a href="UnknownService.html" title="Designated type for any service that does not have value of 0 or 1">UnknownService</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="object" href="UnnamedService$.html" title="This node is not a full node."></a>
-                        <a href="UnnamedService$.html" title="This node is not a full node.">UnnamedService</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="VerAckMessage$.html" title="The verack message acknowledges a previously-received version message, informing the connecting node that it can begin to send other messages."></a>
@@ -1079,14 +1071,17 @@ Here are the currently protocol versions in the network</p></div><dl class="attr
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">sealed </span>
-        <span class="kind">trait</span>
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Indicates the services that are provided by this spv node" href="ServiceIdentifier.html"><span class="name">ServiceIdentifier</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a></span>
+        <a title="Indicates the services that are provided by a node on the P2P network" href="ServiceIdentifier.html"><span class="name">ServiceIdentifier</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a></span>
       </span>
       
-      <p class="shortcomment cmt">Indicates the services that are provided by this spv node</p><div class="fullcomment"><div class="comment cmt"><p>Indicates the services that are provided by this spv node</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#version" target="_blank">https://bitcoin.org/en/developer-reference#version</a></p></span></dd></dl></div>
+      <p class="shortcomment cmt">Indicates the services that are provided by a node on the P2P network
+</p><div class="fullcomment"><div class="comment cmt"><p>Indicates the services that are provided by a node on the P2P network
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#version" target="_blank">https://bitcoin.org/en/developer-reference#version</a></p></span><span class="cmt"><p><a href="https://github.com/bitcoin/bitcoin/blob/master/src/protocol.h#L247" target="_blank">protocol.h</a>
+     in Bitcoin Core</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.TransactionMessage" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="TransactionMessageextendsNetworkElementwithDataPayload"></a><a id="TransactionMessage:TransactionMessage"></a>
       <span class="permalink">
@@ -1123,9 +1118,9 @@ It can be sent in a variety of situations;</p></div><dl class="attributes block"
 </p><div class="fullcomment"><div class="comment cmt"><p>This indicates the type of the object that has been hashed for an inventory
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>https://bitcoin.org/en/developer-reference#data-messages</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.UnknownService" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="UnknownServiceextendsNetworkElementwithServiceIdentifier"></a><a id="UnknownService:UnknownService"></a>
+      <a id="UnknownServiceextendsServiceIdentifier"></a><a id="UnknownService:UnknownService"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#UnknownServiceextendsNetworkElementwithServiceIdentifier" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/index.html#UnknownServiceextendsServiceIdentifier" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1134,7 +1129,7 @@ It can be sent in a variety of situations;</p></div><dl class="attributes block"
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Designated type for any service that does not have value of 0 or 1" href="UnknownService.html"><span class="name">UnknownService</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></span>
+        <a title="Designated type for any service that does not have value of 0 or 1" href="UnknownService.html"><span class="name">UnknownService</span></a><span class="result"> extends <a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></span>
       </span>
       
       <p class="shortcomment cmt">Designated type for any service that does not have value of 0 or 1
@@ -1486,24 +1481,6 @@ The response to the mempool message is one or more inv messages containing the T
       </span>
       
       
-    </li><li name="org.bitcoins.core.p2p.NodeNetwork" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="NodeNetwork"></a><a id="NodeNetwork:NodeNetwork"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#NodeNetwork" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a title="This is a full node and can be asked for full blocks." href="NodeNetwork$.html"><span class="name">NodeNetwork</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">This is a full node and can be asked for full blocks.</p><div class="fullcomment"><div class="comment cmt"><p>This is a full node and can be asked for full blocks.
-It should implement all protocol features available in its self-reported protocol version.
-</p></div></div>
     </li><li name="org.bitcoins.core.p2p.NotFoundMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="NotFoundMessage"></a><a id="NotFoundMessage:NotFoundMessage"></a>
       <span class="permalink">
@@ -1871,9 +1848,7 @@ Bitcoin Core 0.13.2 (January 2017)
 using a headers message rather than an inv message.</p><div class="fullcomment"><div class="comment cmt"><p>The sendheaders message tells the receiving peer to send new block announcements
 using a headers message rather than an inv message.
 There is no payload in a sendheaders message. See the message header section for an example
-of a message without a payload.
-<a href="https://bitcoin.org/en/developer-reference#sendheaders" target="_blank">https://bitcoin.org/en/developer-reference#sendheaders</a>
-</p></div></div>
+of a message without a payload.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#sendheaders" target="_blank">https://bitcoin.org/en/developer-reference#sendheaders</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.ServiceIdentifier" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ServiceIdentifier"></a><a id="ServiceIdentifier:ServiceIdentifier"></a>
       <span class="permalink">
@@ -1922,24 +1897,6 @@ of a message without a payload.
       </span>
       
       
-    </li><li name="org.bitcoins.core.p2p.UnnamedService" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="UnnamedService"></a><a id="UnnamedService:UnnamedService"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/index.html#UnnamedService" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a title="This node is not a full node." href="UnnamedService$.html"><span class="name">UnnamedService</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">This node is not a full node.</p><div class="fullcomment"><div class="comment cmt"><p>This node is not a full node.
-It may not be able to provide any data except for the transactions it originates.
-</p></div></div>
     </li><li name="org.bitcoins.core.p2p.VerAckMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="VerAckMessage"></a><a id="VerAckMessage:VerAckMessage"></a>
       <span class="permalink">
@@ -1959,9 +1916,7 @@ It may not be able to provide any data except for the transactions it originates
 informing the connecting node that it can begin to send other messages.</p><div class="fullcomment"><div class="comment cmt"><p>The verack message acknowledges a previously-received version message,
 informing the connecting node that it can begin to send other messages.
 The verack message has no payload; for an example of a message with no payload,
-see the message headers section.
-<a href="https://bitcoin.org/en/developer-reference#verack" target="_blank">https://bitcoin.org/en/developer-reference#verack</a>
-</p></div></div>
+see the message headers section.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://bitcoin.org/en/developer-reference#verack" target="_blank">https://bitcoin.org/en/developer-reference#verack</a></p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.VersionMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="VersionMessage"></a><a id="VersionMessage:VersionMessage"></a>
       <span class="permalink">

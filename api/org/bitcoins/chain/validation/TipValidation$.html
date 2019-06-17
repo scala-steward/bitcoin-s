@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+42-5ed0f6d3-SNAPSHOT - org.bitcoins.chain.validation.TipValidation</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 42 - 5ed0f6d3 - SNAPSHOT - org.bitcoins.chain.validation.TipValidation" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 42 5ed0f6d3 SNAPSHOT org.bitcoins.chain.validation.TipValidation" />
+          <title>Bitcoin-S 0.1.0+43-02560ebb-SNAPSHOT - org.bitcoins.chain.validation.TipValidation</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 43 - 02560ebb - SNAPSHOT - org.bitcoins.chain.validation.TipValidation" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 43 02560ebb SNAPSHOT org.bitcoins.chain.validation.TipValidation" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+42-5ed0f6d3-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+43-02560ebb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -430,9 +430,11 @@ validation checks occur
         <span class="name">isBadNonce</span><span class="params">(<span name="header">header: <a href="../../core/protocol/blockchain/BlockHeader.html" class="extype" name="org.bitcoins.core.protocol.blockchain.BlockHeader">BlockHeader</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
-      <p class="shortcomment cmt">Checks if <span class="extype" name="header">header</span> hashes to meet the POW requirements for this block (nBits)
-Mimics this</p><div class="fullcomment"><div class="comment cmt"><p>Checks if <span class="extype" name="header">header</span> hashes to meet the POW requirements for this block (nBits)
-Mimics this</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TipValidation.html" class="extype" name="org.bitcoins.chain.validation.TipValidation">TipValidation</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bitcoin/blob/eb7daf4d600eeb631427c018a984a77a34aca66e/src/pow.cpp#L74" target="_blank">https://github.com/bitcoin/bitcoin/blob/eb7daf4d600eeb631427c018a984a77a34aca66e/src/pow.cpp#L74</a></p></span></dd></dl></div>
+      <p class="shortcomment cmt">Checks if the given header hashes to meet the POW requirements for
+this block (determined by lookinng at the <code>nBits</code> field).</p><div class="fullcomment"><div class="comment cmt"><p>Checks if the given header hashes to meet the POW requirements for
+this block (determined by lookinng at the <code>nBits</code> field).
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="TipValidation.html" class="extype" name="org.bitcoins.chain.validation.TipValidation">TipValidation</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bitcoin/blob/eb7daf4d600eeb631427c018a984a77a34aca66e/src/pow.cpp#L74" target="_blank">pow.cpp</a>
+     in Bitcoin Core</p></span></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">

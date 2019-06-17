@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+42-5ed0f6d3-SNAPSHOT - org.bitcoins.chain.api.ChainApi</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 42 - 5ed0f6d3 - SNAPSHOT - org.bitcoins.chain.api.ChainApi" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 42 5ed0f6d3 SNAPSHOT org.bitcoins.chain.api.ChainApi" />
+          <title>Bitcoin-S 0.1.0+43-02560ebb-SNAPSHOT - org.bitcoins.chain.api.ChainApi</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 43 - 02560ebb - SNAPSHOT - org.bitcoins.chain.api.ChainApi" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 43 02560ebb SNAPSHOT org.bitcoins.chain.api.ChainApi" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+42-5ed0f6d3-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+43-02560ebb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -258,9 +258,9 @@
       
       <p class="shortcomment cmt">Gets the hash of the block that is what we consider &quot;best&quot;</p>
     </li><li name="org.bitcoins.chain.api.ChainApi#getBlockCount" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="getBlockCount:scala.concurrent.Future[Long]"></a><a id="getBlockCount:Future[Long]"></a>
+      <a id="getBlockCount(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Long]"></a><a id="getBlockCount(ExecutionContext):Future[Long]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/api/ChainApi.html#getBlockCount:scala.concurrent.Future[Long]" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/api/ChainApi.html#getBlockCount(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Long]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -269,14 +269,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getBlockCount</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a>]</span>
+        <span class="name">getBlockCount</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Gets the number of blocks in the database</p>
     </li><li name="org.bitcoins.chain.api.ChainApi#getHeader" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="getHeader(hash:org.bitcoins.core.crypto.DoubleSha256DigestBE):scala.concurrent.Future[Option[org.bitcoins.chain.models.BlockHeaderDb]]"></a><a id="getHeader(DoubleSha256DigestBE):Future[Option[BlockHeaderDb]]"></a>
+      <a id="getHeader(hash:org.bitcoins.core.crypto.DoubleSha256DigestBE)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[org.bitcoins.chain.models.BlockHeaderDb]]"></a><a id="getHeader(DoubleSha256DigestBE)(ExecutionContext):Future[Option[BlockHeaderDb]]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/chain/api/ChainApi.html#getHeader(hash:org.bitcoins.core.crypto.DoubleSha256DigestBE):scala.concurrent.Future[Option[org.bitcoins.chain.models.BlockHeaderDb]]" title="Permalink">
+      <a href="../../../../org/bitcoins/chain/api/ChainApi.html#getHeader(hash:org.bitcoins.core.crypto.DoubleSha256DigestBE)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[org.bitcoins.chain.models.BlockHeaderDb]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -285,7 +285,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getHeader</span><span class="params">(<span name="hash">hash: <a href="../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]]</span>
+        <span class="name">getHeader</span><span class="params">(<span name="hash">hash: <a href="../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">BlockHeaderDb</a>]]</span>
       </span>
       
       <p class="shortcomment cmt">Get's a <a href="../models/BlockHeaderDb.html" class="extype" name="org.bitcoins.chain.models.BlockHeaderDb">org.bitcoins.chain.models.BlockHeaderDb</a> from the chain's database</p>

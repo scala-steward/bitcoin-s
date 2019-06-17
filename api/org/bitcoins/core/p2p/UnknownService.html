@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+42-5ed0f6d3-SNAPSHOT - org.bitcoins.core.p2p.UnknownService</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 42 - 5ed0f6d3 - SNAPSHOT - org.bitcoins.core.p2p.UnknownService" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 42 5ed0f6d3 SNAPSHOT org.bitcoins.core.p2p.UnknownService" />
+          <title>Bitcoin-S 0.1.0+43-02560ebb-SNAPSHOT - org.bitcoins.core.p2p.UnknownService</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 43 - 02560ebb - SNAPSHOT - org.bitcoins.core.p2p.UnknownService" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 43 02560ebb SNAPSHOT org.bitcoins.core.p2p.UnknownService" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+42-5ed0f6d3-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+43-02560ebb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -222,10 +222,6 @@
                         <a class="trait" href="NetworkPayload.html" title="Trait that represents a payload for a message on the Bitcoin p2p network"></a>
                         <a href="NetworkPayload.html" title="Trait that represents a payload for a message on the Bitcoin p2p network">NetworkPayload</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="object" href="NodeNetwork$.html" title="This is a full node and can be asked for full blocks."></a>
-                        <a href="NodeNetwork$.html" title="This is a full node and can be asked for full blocks.">NodeNetwork</a>
-                      </li><li class="current-entities indented4">
                         <a class="object" href="NotFoundMessage$.html" title="The companion object factory used to create NotFoundMessages on the p2p network"></a>
                         <a class="trait" href="NotFoundMessage.html" title="The notfound message is a reply to a getdata message which requested an object the receiving node does not have available for relay."></a>
                         <a href="NotFoundMessage.html" title="The notfound message is a reply to a getdata message which requested an object the receiving node does not have available for relay.">NotFoundMessage</a>
@@ -307,8 +303,8 @@
                         <a href="SendHeadersMessage$.html" title="The sendheaders message tells the receiving peer to send new block announcements using a headers message rather than an inv message.">SendHeadersMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="ServiceIdentifier$.html" title=""></a>
-                        <a class="trait" href="ServiceIdentifier.html" title="Indicates the services that are provided by this spv node"></a>
-                        <a href="ServiceIdentifier.html" title="Indicates the services that are provided by this spv node">ServiceIdentifier</a>
+                        <a class="class" href="ServiceIdentifier.html" title="Indicates the services that are provided by a node on the P2P network"></a>
+                        <a href="ServiceIdentifier.html" title="Indicates the services that are provided by a node on the P2P network">ServiceIdentifier</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="TransactionMessage$.html" title="Companion factory object for the TransactionMessage on the p2p network"></a>
                         <a class="trait" href="TransactionMessage.html" title="The tx message transmits a single transaction in the raw transaction format."></a>
@@ -321,10 +317,6 @@
                         <span class="separator"></span>
                         <a class="trait" href="" title="Designated type for any service that does not have value of 0 or 1"></a>
                         <a href="" title="Designated type for any service that does not have value of 0 or 1">UnknownService</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="object" href="UnnamedService$.html" title="This node is not a full node."></a>
-                        <a href="UnnamedService$.html" title="This node is not a full node.">UnnamedService</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="VerAckMessage$.html" title="The verack message acknowledges a previously-received version message, informing the connecting node that it can begin to send other messages."></a>
@@ -356,7 +348,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">UnknownService</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></span>
+        <span class="name">UnknownService</span><span class="result"> extends <a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></span>
       </span>
       </h4>
 
@@ -414,29 +406,10 @@
 
         
 
-        <div class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="org.bitcoins.core.p2p.ServiceIdentifier#num" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="num:org.bitcoins.core.number.UInt64"></a><a id="num:UInt64"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#num:org.bitcoins.core.number.UInt64" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">num</span><span class="result">: <a href="../number/UInt64.html" class="extype" name="org.bitcoins.core.number.UInt64">UInt64</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></dd></dl></div>
-    </li></ol>
-            </div>
+        
 
         <div class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol>
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
@@ -682,6 +655,144 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.ServiceIdentifier#nodeBloom" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeBloom:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#nodeBloom:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeBloom</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is a full node capable and willing to handle
+bloom-filtered connections.</p><div class="fullcomment"><div class="comment cmt"><p>This is a full node capable and willing to handle
+bloom-filtered connections.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bips/blob/master/bip-0111.mediawiki" target="_blank">BIP111</a>
+     for details</p></span></dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.ServiceIdentifier#nodeGetUtxo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeGetUtxo:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#nodeGetUtxo:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeGetUtxo</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is a full node capable of responding to the
+<code>getutxo</code> protocol request.</p><div class="fullcomment"><div class="comment cmt"><p>This is a full node capable of responding to the
+<code>getutxo</code> protocol request. This is not supported
+by any currently-maintained Bitcoin node.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bips/blob/master/bip-0064.mediawiki" target="_blank">BIP64</a>
+     for details on how this is implemented.</p></span></dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.ServiceIdentifier#nodeNetwork" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeNetwork:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#nodeNetwork:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeNetwork</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is a full node and can be asked for full blocks.</p><div class="fullcomment"><div class="comment cmt"><p>This is a full node and can be asked for full blocks.
+It should implement all protocol features available in
+its self-reported protocol version.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.ServiceIdentifier#nodeNetworkLimited" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeNetworkLimited:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#nodeNetworkLimited:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeNetworkLimited</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">this means the same as <code>nodeNetwork</code> with the limitation of only
+serving the last 288 (2 days) blocks
+</p><div class="fullcomment"><div class="comment cmt"><p>this means the same as <code>nodeNetwork</code> with the limitation of only
+serving the last 288 (2 days) blocks
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bips/blob/master/bip-0159.mediawiki" target="_blank">BIP159</a>
+     for details on how this is implemented.</p></span></dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.ServiceIdentifier#nodeNone" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeNone:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#nodeNone:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeNone</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This node is not a full node.</p><div class="fullcomment"><div class="comment cmt"><p>This node is not a full node.
+It may not be able to provide any data except for the transactions it originates.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.ServiceIdentifier#nodeWitness" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeWitness:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#nodeWitness:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeWitness</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is a full node that can be asked for blocks
+and transactions including witness data.</p><div class="fullcomment"><div class="comment cmt"><p>This is a full node that can be asked for blocks
+and transactions including witness data.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki" target="_blank">BIP144</a>]
+     for details.</p></span></dd></dl></div>
+    </li><li name="org.bitcoins.core.p2p.ServiceIdentifier#nodeXthin" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeXthin:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#nodeXthin:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeXthin</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is a full node that supports Xtreme Thinblocks.</p><div class="fullcomment"><div class="comment cmt"><p>This is a full node that supports Xtreme Thinblocks.
+This is not supported by any currently-maintained
+Bitcoin node.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
@@ -756,7 +867,7 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="org.bitcoins.core.p2p.UnknownService#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <span class="permalink">
       <a href="../../../../org/bitcoins/core/p2p/UnknownService.html#toString():String" title="Permalink">
@@ -768,10 +879,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <a href="https://docs.oracle.com/javase/11/docs/api/java/lang/String.html#java.lang.String" class="extype" name="java.lang.String">String</a></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.bitcoins.core.p2p.UnknownService">UnknownService</a> → <a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a> → AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">

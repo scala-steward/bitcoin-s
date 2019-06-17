@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+42-5ed0f6d3-SNAPSHOT - org.bitcoins.core.p2p.NetworkIpAddress</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 42 - 5ed0f6d3 - SNAPSHOT - org.bitcoins.core.p2p.NetworkIpAddress" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 42 5ed0f6d3 SNAPSHOT org.bitcoins.core.p2p.NetworkIpAddress" />
+          <title>Bitcoin-S 0.1.0+43-02560ebb-SNAPSHOT - org.bitcoins.core.p2p.NetworkIpAddress</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 43 - 02560ebb - SNAPSHOT - org.bitcoins.core.p2p.NetworkIpAddress" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 43 02560ebb SNAPSHOT org.bitcoins.core.p2p.NetworkIpAddress" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+42-5ed0f6d3-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+43-02560ebb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -222,10 +222,6 @@
                         <a class="trait" href="NetworkPayload.html" title="Trait that represents a payload for a message on the Bitcoin p2p network"></a>
                         <a href="NetworkPayload.html" title="Trait that represents a payload for a message on the Bitcoin p2p network">NetworkPayload</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="object" href="NodeNetwork$.html" title="This is a full node and can be asked for full blocks."></a>
-                        <a href="NodeNetwork$.html" title="This is a full node and can be asked for full blocks.">NodeNetwork</a>
-                      </li><li class="current-entities indented4">
                         <a class="object" href="NotFoundMessage$.html" title="The companion object factory used to create NotFoundMessages on the p2p network"></a>
                         <a class="trait" href="NotFoundMessage.html" title="The notfound message is a reply to a getdata message which requested an object the receiving node does not have available for relay."></a>
                         <a href="NotFoundMessage.html" title="The notfound message is a reply to a getdata message which requested an object the receiving node does not have available for relay.">NotFoundMessage</a>
@@ -307,8 +303,8 @@
                         <a href="SendHeadersMessage$.html" title="The sendheaders message tells the receiving peer to send new block announcements using a headers message rather than an inv message.">SendHeadersMessage</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="ServiceIdentifier$.html" title=""></a>
-                        <a class="trait" href="ServiceIdentifier.html" title="Indicates the services that are provided by this spv node"></a>
-                        <a href="ServiceIdentifier.html" title="Indicates the services that are provided by this spv node">ServiceIdentifier</a>
+                        <a class="class" href="ServiceIdentifier.html" title="Indicates the services that are provided by a node on the P2P network"></a>
+                        <a href="ServiceIdentifier.html" title="Indicates the services that are provided by a node on the P2P network">ServiceIdentifier</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="TransactionMessage$.html" title="Companion factory object for the TransactionMessage on the p2p network"></a>
                         <a class="trait" href="TransactionMessage.html" title="The tx message transmits a single transaction in the raw transaction format."></a>
@@ -321,10 +317,6 @@
                         <span class="separator"></span>
                         <a class="trait" href="UnknownService.html" title="Designated type for any service that does not have value of 0 or 1"></a>
                         <a href="UnknownService.html" title="Designated type for any service that does not have value of 0 or 1">UnknownService</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="object" href="UnnamedService$.html" title="This node is not a full node."></a>
-                        <a href="UnnamedService$.html" title="This node is not a full node.">UnnamedService</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="VerAckMessage$.html" title="The verack message acknowledges a previously-received version message, informing the connecting node that it can begin to send other messages."></a>
@@ -623,9 +615,9 @@
       
       <p class="shortcomment cmt">Creates a T out of a hex string.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a T out of a hex string.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Factory.html" class="extype" name="org.bitcoins.core.util.Factory">Factory</a></dd></dl></div>
     </li><li name="org.bitcoins.core.p2p.NetworkIpAddress#fromInetSocketAddress" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fromInetSocketAddress(socket:java.net.InetSocketAddress):org.bitcoins.core.p2p.NetworkIpAddress"></a><a id="fromInetSocketAddress(InetSocketAddress):NetworkIpAddress"></a>
+      <a id="fromInetSocketAddress(socket:java.net.InetSocketAddress,services:org.bitcoins.core.p2p.ServiceIdentifier):org.bitcoins.core.p2p.NetworkIpAddress"></a><a id="fromInetSocketAddress(InetSocketAddress,ServiceIdentifier):NetworkIpAddress"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/p2p/NetworkIpAddress$.html#fromInetSocketAddress(socket:java.net.InetSocketAddress):org.bitcoins.core.p2p.NetworkIpAddress" title="Permalink">
+      <a href="../../../../org/bitcoins/core/p2p/NetworkIpAddress$.html#fromInetSocketAddress(socket:java.net.InetSocketAddress,services:org.bitcoins.core.p2p.ServiceIdentifier):org.bitcoins.core.p2p.NetworkIpAddress" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -634,7 +626,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fromInetSocketAddress</span><span class="params">(<span name="socket">socket: <a href="https://docs.oracle.com/javase/11/docs/api/java/net/InetSocketAddress.html#java.net.InetSocketAddress" class="extype" name="java.net.InetSocketAddress">InetSocketAddress</a></span>)</span><span class="result">: <a href="NetworkIpAddress.html" class="extype" name="org.bitcoins.core.p2p.NetworkIpAddress">NetworkIpAddress</a></span>
+        <span class="name">fromInetSocketAddress</span><span class="params">(<span name="socket">socket: <a href="https://docs.oracle.com/javase/11/docs/api/java/net/InetSocketAddress.html#java.net.InetSocketAddress" class="extype" name="java.net.InetSocketAddress">InetSocketAddress</a></span>, <span name="services">services: <a href="ServiceIdentifier.html" class="extype" name="org.bitcoins.core.p2p.ServiceIdentifier">ServiceIdentifier</a></span>)</span><span class="result">: <a href="NetworkIpAddress.html" class="extype" name="org.bitcoins.core.p2p.NetworkIpAddress">NetworkIpAddress</a></span>
       </span>
       
       
