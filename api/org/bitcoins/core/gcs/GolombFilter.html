@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+43-02560ebb-SNAPSHOT - org.bitcoins.core.gcs.GolombFilter</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 43 - 02560ebb - SNAPSHOT - org.bitcoins.core.gcs.GolombFilter" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 43 02560ebb SNAPSHOT org.bitcoins.core.gcs.GolombFilter" />
+          <title>Bitcoin-S 0.1.0+44-26ad5246-SNAPSHOT - org.bitcoins.core.gcs.GolombFilter</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 44 - 26ad5246 - SNAPSHOT - org.bitcoins.core.gcs.GolombFilter" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 44 26ad5246 SNAPSHOT org.bitcoins.core.gcs.GolombFilter" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+43-02560ebb-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+44-26ad5246-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -137,6 +137,10 @@
                         <span class="separator"></span>
                         <a class="object" href="BlockFilter$.html" title=""></a>
                         <a href="BlockFilter$.html" title="">BlockFilter</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="FilterHeader.html" title="Bip 157 Block Filter Headers which commit to a chain of block filters, much in the same way that block headers commit to a block chain"></a>
+                        <a href="FilterHeader.html" title="Bip 157 Block Filter Headers which commit to a chain of block filters, much in the same way that block headers commit to a block chain">FilterHeader</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="GCS$.html" title="Defines all functionality dealing with Golomb-Coded Sets"></a>
@@ -322,6 +326,22 @@ TODO: Replace ByteVector with a type for keys</p></span></dd></dl><div class="to
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.bitcoins.core.gcs.GolombFilter#bytes" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bytes:scodec.bits.ByteVector"></a><a id="bytes:ByteVector"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#bytes:scodec.bits.ByteVector" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bytes</span><span class="result">: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -417,6 +437,70 @@ TODO: Replace ByteVector with a type for keys</p></span></dd></dl><div class="to
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.core.gcs.GolombFilter#getHeader" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getHeader(prevHeaderHash:org.bitcoins.core.crypto.DoubleSha256Digest):org.bitcoins.core.gcs.FilterHeader"></a><a id="getHeader(DoubleSha256Digest):FilterHeader"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#getHeader(prevHeaderHash:org.bitcoins.core.crypto.DoubleSha256Digest):org.bitcoins.core.gcs.FilterHeader" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getHeader</span><span class="params">(<span name="prevHeaderHash">prevHeaderHash: <a href="../crypto/DoubleSha256Digest.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256Digest">DoubleSha256Digest</a></span>)</span><span class="result">: <a href="FilterHeader.html" class="extype" name="org.bitcoins.core.gcs.FilterHeader">FilterHeader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Given the previous FilterHeader hash, constructs the header corresponding to this</p>
+    </li><li name="org.bitcoins.core.gcs.GolombFilter#getHeader" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getHeader(prevHeader:org.bitcoins.core.gcs.FilterHeader):org.bitcoins.core.gcs.FilterHeader"></a><a id="getHeader(FilterHeader):FilterHeader"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#getHeader(prevHeader:org.bitcoins.core.gcs.FilterHeader):org.bitcoins.core.gcs.FilterHeader" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getHeader</span><span class="params">(<span name="prevHeader">prevHeader: <a href="FilterHeader.html" class="extype" name="org.bitcoins.core.gcs.FilterHeader">FilterHeader</a></span>)</span><span class="result">: <a href="FilterHeader.html" class="extype" name="org.bitcoins.core.gcs.FilterHeader">FilterHeader</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Given the previous FilterHeader, constructs the header corresponding to this</p>
+    </li><li name="org.bitcoins.core.gcs.GolombFilter#hash" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hash:org.bitcoins.core.crypto.DoubleSha256Digest"></a><a id="hash:DoubleSha256Digest"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#hash:org.bitcoins.core.crypto.DoubleSha256Digest" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hash</span><span class="result">: <a href="../crypto/DoubleSha256Digest.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256Digest">DoubleSha256Digest</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The hash of this serialized filter</p>
+    </li><li name="org.bitcoins.core.gcs.GolombFilter#hex" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hex:String"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#hex:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hex</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
