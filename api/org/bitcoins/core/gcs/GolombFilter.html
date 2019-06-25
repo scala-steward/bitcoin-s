@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+65-63d13a71-SNAPSHOT - org.bitcoins.core.gcs.GolombFilter</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 65 - 63d13a71 - SNAPSHOT - org.bitcoins.core.gcs.GolombFilter" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 65 63d13a71 SNAPSHOT org.bitcoins.core.gcs.GolombFilter" />
+          <title>Bitcoin-S 0.1.0+76-9bd5e8cb-SNAPSHOT - org.bitcoins.core.gcs.GolombFilter</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 76 - 9bd5e8cb - SNAPSHOT - org.bitcoins.core.gcs.GolombFilter" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 76 9bd5e8cb SNAPSHOT org.bitcoins.core.gcs.GolombFilter" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+65-63d13a71-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+76-9bd5e8cb-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -151,6 +151,10 @@
                         <a href="" title="Represents a GCS encoded set with all parameters specified">GolombFilter</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
+                        <a class="class" href="SipHashKey.html" title=""></a>
+                        <a href="SipHashKey.html" title="">SipHashKey</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
                         <a class="class" href="TempUtxoProvider.html" title="A temporary abstraction over anything that keeps track of the UTXO set"></a>
                         <a href="TempUtxoProvider.html" title="A temporary abstraction over anything that keeps track of the UTXO set">TempUtxoProvider</a>
                       </li><li class="current-entities indented4">
@@ -180,7 +184,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">GolombFilter</span><span class="params">(<span name="key">key: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="m">m: <a href="../number/UInt64.html" class="extype" name="org.bitcoins.core.number.UInt64">UInt64</a></span>, <span name="p">p: <a href="../number/UInt8.html" class="extype" name="org.bitcoins.core.number.UInt8">UInt8</a></span>, <span name="n">n: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="encodedData">encodedData: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/BitVector.html#scodec.bits.BitVector" class="extype" name="scodec.bits.BitVector">BitVector</a></span>)</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">GolombFilter</span><span class="params">(<span name="key">key: <a href="SipHashKey.html" class="extype" name="org.bitcoins.core.gcs.SipHashKey">SipHashKey</a></span>, <span name="m">m: <a href="../number/UInt64.html" class="extype" name="org.bitcoins.core.number.UInt64">UInt64</a></span>, <span name="p">p: <a href="../number/UInt8.html" class="extype" name="org.bitcoins.core.number.UInt8">UInt8</a></span>, <span name="n">n: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="encodedData">encodedData: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/BitVector.html#scodec.bits.BitVector" class="extype" name="scodec.bits.BitVector">BitVector</a></span>)</span><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
@@ -237,9 +241,9 @@ TODO: Replace ByteVector with a type for keys</p></span></dd></dl><div class="to
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.bitcoins.core.gcs.GolombFilter#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(key:scodec.bits.ByteVector,m:org.bitcoins.core.number.UInt64,p:org.bitcoins.core.number.UInt8,n:org.bitcoins.core.protocol.CompactSizeUInt,encodedData:scodec.bits.BitVector):org.bitcoins.core.gcs.GolombFilter"></a><a id="&lt;init&gt;:GolombFilter"></a>
+      <a id="&lt;init&gt;(key:org.bitcoins.core.gcs.SipHashKey,m:org.bitcoins.core.number.UInt64,p:org.bitcoins.core.number.UInt8,n:org.bitcoins.core.protocol.CompactSizeUInt,encodedData:scodec.bits.BitVector):org.bitcoins.core.gcs.GolombFilter"></a><a id="&lt;init&gt;:GolombFilter"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#&lt;init&gt;(key:scodec.bits.ByteVector,m:org.bitcoins.core.number.UInt64,p:org.bitcoins.core.number.UInt8,n:org.bitcoins.core.protocol.CompactSizeUInt,encodedData:scodec.bits.BitVector):org.bitcoins.core.gcs.GolombFilter" title="Permalink">
+      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#&lt;init&gt;(key:org.bitcoins.core.gcs.SipHashKey,m:org.bitcoins.core.number.UInt64,p:org.bitcoins.core.number.UInt8,n:org.bitcoins.core.protocol.CompactSizeUInt,encodedData:scodec.bits.BitVector):org.bitcoins.core.gcs.GolombFilter" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -248,7 +252,7 @@ TODO: Replace ByteVector with a type for keys</p></span></dd></dl><div class="to
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">GolombFilter</span><span class="params">(<span name="key">key: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="m">m: <a href="../number/UInt64.html" class="extype" name="org.bitcoins.core.number.UInt64">UInt64</a></span>, <span name="p">p: <a href="../number/UInt8.html" class="extype" name="org.bitcoins.core.number.UInt8">UInt8</a></span>, <span name="n">n: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="encodedData">encodedData: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/BitVector.html#scodec.bits.BitVector" class="extype" name="scodec.bits.BitVector">BitVector</a></span>)</span>
+        <span class="name">GolombFilter</span><span class="params">(<span name="key">key: <a href="SipHashKey.html" class="extype" name="org.bitcoins.core.gcs.SipHashKey">SipHashKey</a></span>, <span name="m">m: <a href="../number/UInt64.html" class="extype" name="org.bitcoins.core.number.UInt64">UInt64</a></span>, <span name="p">p: <a href="../number/UInt8.html" class="extype" name="org.bitcoins.core.number.UInt8">UInt8</a></span>, <span name="n">n: <a href="../protocol/CompactSizeUInt.html" class="extype" name="org.bitcoins.core.protocol.CompactSizeUInt">CompactSizeUInt</a></span>, <span name="encodedData">encodedData: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/BitVector.html#scodec.bits.BitVector" class="extype" name="scodec.bits.BitVector">BitVector</a></span>)</span>
       </span>
       
       
@@ -518,9 +522,9 @@ TODO: Replace ByteVector with a type for keys</p></span></dd></dl><div class="to
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.bitcoins.core.gcs.GolombFilter#key" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="key:scodec.bits.ByteVector"></a><a id="key:ByteVector"></a>
+      <a id="key:org.bitcoins.core.gcs.SipHashKey"></a><a id="key:SipHashKey"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#key:scodec.bits.ByteVector" title="Permalink">
+      <a href="../../../../org/bitcoins/core/gcs/GolombFilter.html#key:org.bitcoins.core.gcs.SipHashKey" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -529,7 +533,7 @@ TODO: Replace ByteVector with a type for keys</p></span></dd></dl><div class="to
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">key</span><span class="result">: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>
+        <span class="name">key</span><span class="result">: <a href="SipHashKey.html" class="extype" name="org.bitcoins.core.gcs.SipHashKey">SipHashKey</a></span>
       </span>
       
       
