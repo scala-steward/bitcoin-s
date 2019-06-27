@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+80-eab59753-SNAPSHOT - org.bitcoins.core.crypto</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 80 - eab59753 - SNAPSHOT - org.bitcoins.core.crypto" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 80 eab59753 SNAPSHOT org.bitcoins.core.crypto" />
+          <title>Bitcoin-S 0.1.0+91-d98592ae-SNAPSHOT - org.bitcoins.core.crypto</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 91 - d98592ae - SNAPSHOT - org.bitcoins.core.crypto" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 91 d98592ae SNAPSHOT org.bitcoins.core.crypto" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+80-eab59753-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+91-d98592ae-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -190,25 +190,29 @@
                         <a class="trait" href="AesDecryptionException.html" title=""></a>
                         <a href="AesDecryptionException.html" title="">AesDecryptionException</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="AesEncryptedData.html" title=""></a>
-                        <a href="AesEncryptedData.html" title="">AesEncryptedData</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="trait" href="AesEncryptionException.html" title=""></a>
-                        <a href="AesEncryptionException.html" title="">AesEncryptionException</a>
+                        <a class="object" href="AesEncryptedData$.html" title=""></a>
+                        <a class="class" href="AesEncryptedData.html" title="Represents a encrypted cipher text with it's accompanying initialization vector (IV)."></a>
+                        <a href="AesEncryptedData.html" title="Represents a encrypted cipher text with it's accompanying initialization vector (IV).">AesEncryptedData</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="AesException$.html" title=""></a>
                         <a href="AesException$.html" title="">AesException</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
+                        <a class="object" href="AesIV$.html" title=""></a>
+                        <a class="class" href="AesIV.html" title="Represents an initialization vector (IV) used in AES encryption."></a>
+                        <a href="AesIV.html" title="Represents an initialization vector (IV) used in AES encryption.">AesIV</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="AesKey$.html" title=""></a>
+                        <a class="class" href="AesKey.html" title="Represents a encryption/decryption key."></a>
+                        <a href="AesKey.html" title="Represents a encryption/decryption key.">AesKey</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="AesPassword$.html" title=""></a>
                         <a class="class" href="AesPassword.html" title=""></a>
                         <a href="AesPassword.html" title="">AesPassword</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="AesSalt.html" title=""></a>
-                        <a href="AesSalt.html" title="">AesSalt</a>
+                        <a class="object" href="AesSalt$.html" title=""></a>
+                        <a class="class" href="AesSalt.html" title="Represents a salt used to derive a AES key from a human-readable passphrase."></a>
+                        <a href="AesSalt.html" title="Represents a salt used to derive a AES key from a human-readable passphrase.">AesSalt</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="BIP39Seed$.html" title=""></a>
                         <a class="class" href="BIP39Seed.html" title=""></a>
@@ -669,7 +673,7 @@ key derivation paths.
       </span>
       
       
-    </li><li name="org.bitcoins.core.crypto.AesEncryptedData" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.bitcoins.core.crypto.AesEncryptedData" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="AesEncryptedDataextendsProductwithSerializable"></a><a id="AesEncryptedData:AesEncryptedData"></a>
       <span class="permalink">
       <a href="../../../../org/bitcoins/core/crypto/index.html#AesEncryptedDataextendsProductwithSerializable" title="Permalink">
@@ -677,62 +681,88 @@ key derivation paths.
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier"></span>
+        <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="AesEncryptedData.html"><span class="name">AesEncryptedData</span></a><span class="params">(<span name="cipherText">cipherText: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="iv">iv: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="salt">salt: <a href="AesSalt.html" class="extype" name="org.bitcoins.core.crypto.AesSalt">AesSalt</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Represents a encrypted cipher text with it's accompanying initialization vector (IV)." href="AesEncryptedData.html"><span class="name">AesEncryptedData</span></a><span class="params">(<span name="cipherText">cipherText: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="iv">iv: <a href="AesIV.html" class="extype" name="org.bitcoins.core.crypto.AesIV">AesIV</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      
-    </li><li name="org.bitcoins.core.crypto.AesEncryptionException" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="AesEncryptionExceptionextendsException"></a><a id="AesEncryptionException:AesEncryptionException"></a>
+      <p class="shortcomment cmt">Represents a encrypted cipher text with it's accompanying
+initialization vector (IV).</p><div class="fullcomment"><div class="comment cmt"><p>Represents a encrypted cipher text with it's accompanying
+initialization vector (IV). Both the cipher text and the IV
+is needed to decrypt the cipher text.
+</p></div></div>
+    </li><li name="org.bitcoins.core.crypto.AesIV" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AesIVextendsNetworkElementwithProductwithSerializable"></a><a id="AesIV:AesIV"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/crypto/index.html#AesEncryptionExceptionextendsException" title="Permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesIVextendsNetworkElementwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">sealed </span>
-        <span class="kind">trait</span>
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="AesEncryptionException.html"><span class="name">AesEncryptionException</span></a><span class="result"> extends <a href="../../../../scala/index.html#Exception=Exception" class="extmbr" name="scala.Exception">Exception</a></span>
+        <a title="Represents an initialization vector (IV) used in AES encryption." href="AesIV.html"><span class="name">AesIV</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      
-    </li><li name="org.bitcoins.core.crypto.AesPassword" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AesPasswordextendsProductwithSerializable"></a><a id="AesPassword:AesPassword"></a>
+      <p class="shortcomment cmt">Represents an initialization vector (IV) used
+in AES encryption.</p>
+    </li><li name="org.bitcoins.core.crypto.AesKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AesKeyextendsNetworkElementwithProductwithSerializable"></a><a id="AesKey:AesKey"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/crypto/index.html#AesPasswordextendsProductwithSerializable" title="Permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesKeyextendsNetworkElementwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier"></span>
+        <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="AesPassword.html"><span class="name">AesPassword</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Represents a encryption/decryption key." href="AesKey.html"><span class="name">AesKey</span></a><span class="result"> extends <a href="../protocol/NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalArgumentException"><code>IllegalArgumentException</code></span> if passed an empty string</p></span></dd></dl></div>
+      <p class="shortcomment cmt">Represents a encryption/decryption key.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a encryption/decryption key.
+AES keys can be converted to
+<a href="https://docs.oracle.com/javase/11/docs/api/javax/crypto/SecretKey.html" class="extype" name="javax.crypto.SecretKey">SecretKey</a>s,
+and have certain length requirements.
+</p></div></div>
+    </li><li name="org.bitcoins.core.crypto.AesPassword" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AesPasswordextendsAnyValwithProductwithSerializable"></a><a id="AesPassword:AesPassword"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesPasswordextendsAnyValwithProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AesPassword.html"><span class="name">AesPassword</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/AnyVal.html#scala.AnyVal" class="extype" name="scala.AnyVal">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      
     </li><li name="org.bitcoins.core.crypto.AesSalt" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="AesSaltextendsProductwithSerializable"></a><a id="AesSalt:AesSalt"></a>
+      <a id="AesSaltextendsAnyValwithProductwithSerializable"></a><a id="AesSalt:AesSalt"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/crypto/index.html#AesSaltextendsProductwithSerializable" title="Permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesSaltextendsAnyValwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier"></span>
+        <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="AesSalt.html"><span class="name">AesSalt</span></a><span class="params">(<span name="value">value: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Represents a salt used to derive a AES key from a human-readable passphrase." href="AesSalt.html"><span class="name">AesSalt</span></a><span class="params">(<span name="bytes">bytes: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/AnyVal.html#scala.AnyVal" class="extype" name="scala.AnyVal">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Represents a salt used to derive a AES key from
+a human-readable passphrase.</p>
     </li><li name="org.bitcoins.core.crypto.BIP39Seed" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="BIP39SeedextendsNetworkElement"></a><a id="BIP39Seed:BIP39Seed"></a>
       <span class="permalink">
@@ -1414,7 +1444,7 @@ for more info on rebuilding P2WSH and P2WPKH scriptpubkeys
         <div class="values members">
               <h3>Value Members</h3>
               <ol>
-                <li name="org.bitcoins.core.crypto.AesCrypt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+                <li name="org.bitcoins.core.crypto.AesCrypt" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="AesCrypt"></a><a id="AesCrypt:AesCrypt"></a>
       <span class="permalink">
       <a href="../../../../org/bitcoins/core/crypto/index.html#AesCrypt" title="Permalink">
@@ -1430,9 +1460,23 @@ for more info on rebuilding P2WSH and P2WPKH scriptpubkeys
       </span>
       
       <p class="shortcomment cmt">Provides functionality for encrypting and decrypting with AES
-</p><div class="fullcomment"><div class="comment cmt"><p>Provides functionality for encrypting and decrypting with AES
-</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Most of the content here is taken from
-      <a href="https://stackoverflow.com/questions/992019/java-256-bit-aes-password-based-encryption" target="_blank">this SO question</a></p></span></dd></dl></div>
+</p>
+    </li><li name="org.bitcoins.core.crypto.AesEncryptedData" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AesEncryptedData"></a><a id="AesEncryptedData:AesEncryptedData"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesEncryptedData" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AesEncryptedData$.html"><span class="name">AesEncryptedData</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      
     </li><li name="org.bitcoins.core.crypto.AesException" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="AesException"></a><a id="AesException:AesException"></a>
       <span class="permalink">
@@ -1446,6 +1490,70 @@ for more info on rebuilding P2WSH and P2WPKH scriptpubkeys
       </span>
       <span class="symbol">
         <a title="" href="AesException$.html"><span class="name">AesException</span></a>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.core.crypto.AesIV" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AesIV"></a><a id="AesIV:AesIV"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesIV" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AesIV$.html"><span class="name">AesIV</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.core.crypto.AesKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AesKey"></a><a id="AesKey:AesKey"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesKey" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AesKey$.html"><span class="name">AesKey</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.core.crypto.AesPassword" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AesPassword"></a><a id="AesPassword:AesPassword"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesPassword" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AesPassword$.html"><span class="name">AesPassword</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.core.crypto.AesSalt" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AesSalt"></a><a id="AesSalt:AesSalt"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/core/crypto/index.html#AesSalt" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AesSalt$.html"><span class="name">AesSalt</span></a><span class="result"> extends <a href="../util/Factory.html" class="extype" name="org.bitcoins.core.util.Factory">Factory</a>[<a href="AesSalt.html" class="extype" name="org.bitcoins.core.crypto.AesSalt">AesSalt</a>] with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       

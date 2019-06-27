@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+80-eab59753-SNAPSHOT - org.bitcoins.core.crypto.AesCrypt</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 80 - eab59753 - SNAPSHOT - org.bitcoins.core.crypto.AesCrypt" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 80 eab59753 SNAPSHOT org.bitcoins.core.crypto.AesCrypt" />
+          <title>Bitcoin-S 0.1.0+91-d98592ae-SNAPSHOT - org.bitcoins.core.crypto.AesCrypt</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 91 - d98592ae - SNAPSHOT - org.bitcoins.core.crypto.AesCrypt" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 91 d98592ae SNAPSHOT org.bitcoins.core.crypto.AesCrypt" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+80-eab59753-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+91-d98592ae-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -142,25 +142,29 @@
                         <a class="trait" href="AesDecryptionException.html" title=""></a>
                         <a href="AesDecryptionException.html" title="">AesDecryptionException</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="AesEncryptedData.html" title=""></a>
-                        <a href="AesEncryptedData.html" title="">AesEncryptedData</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="trait" href="AesEncryptionException.html" title=""></a>
-                        <a href="AesEncryptionException.html" title="">AesEncryptionException</a>
+                        <a class="object" href="AesEncryptedData$.html" title=""></a>
+                        <a class="class" href="AesEncryptedData.html" title="Represents a encrypted cipher text with it's accompanying initialization vector (IV)."></a>
+                        <a href="AesEncryptedData.html" title="Represents a encrypted cipher text with it's accompanying initialization vector (IV).">AesEncryptedData</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="AesException$.html" title=""></a>
                         <a href="AesException$.html" title="">AesException</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
+                        <a class="object" href="AesIV$.html" title=""></a>
+                        <a class="class" href="AesIV.html" title="Represents an initialization vector (IV) used in AES encryption."></a>
+                        <a href="AesIV.html" title="Represents an initialization vector (IV) used in AES encryption.">AesIV</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="AesKey$.html" title=""></a>
+                        <a class="class" href="AesKey.html" title="Represents a encryption/decryption key."></a>
+                        <a href="AesKey.html" title="Represents a encryption/decryption key.">AesKey</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="AesPassword$.html" title=""></a>
                         <a class="class" href="AesPassword.html" title=""></a>
                         <a href="AesPassword.html" title="">AesPassword</a>
                       </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="AesSalt.html" title=""></a>
-                        <a href="AesSalt.html" title="">AesSalt</a>
+                        <a class="object" href="AesSalt$.html" title=""></a>
+                        <a class="class" href="AesSalt.html" title="Represents a salt used to derive a AES key from a human-readable passphrase."></a>
+                        <a href="AesSalt.html" title="Represents a salt used to derive a AES key from a human-readable passphrase.">AesSalt</a>
                       </li><li class="current-entities indented4">
                         <a class="object" href="BIP39Seed$.html" title=""></a>
                         <a class="class" href="BIP39Seed.html" title=""></a>
@@ -390,8 +394,7 @@
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Provides functionality for encrypting and decrypting with AES
-</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Most of the content here is taken from
-      <a href="https://stackoverflow.com/questions/992019/java-256-bit-aes-password-based-encryption" target="_blank">this SO question</a></p></span></dd></dl><div class="toggleContainer block">
+</p></div><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -539,9 +542,9 @@
               
         </dd></dl></div>
     </li><li name="org.bitcoins.core.crypto.AesCrypt#decrypt" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="decrypt(encrypted:org.bitcoins.core.crypto.AesEncryptedData,password:org.bitcoins.core.crypto.AesPassword):Either[org.bitcoins.core.crypto.AesDecryptionException,scodec.bits.ByteVector]"></a><a id="decrypt(AesEncryptedData,AesPassword):Either[AesDecryptionException,ByteVector]"></a>
+      <a id="decrypt(encrypted:org.bitcoins.core.crypto.AesEncryptedData,key:org.bitcoins.core.crypto.AesKey):Either[org.bitcoins.core.crypto.AesDecryptionException,scodec.bits.ByteVector]"></a><a id="decrypt(AesEncryptedData,AesKey):Either[AesDecryptionException,ByteVector]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/crypto/AesCrypt$.html#decrypt(encrypted:org.bitcoins.core.crypto.AesEncryptedData,password:org.bitcoins.core.crypto.AesPassword):Either[org.bitcoins.core.crypto.AesDecryptionException,scodec.bits.ByteVector]" title="Permalink">
+      <a href="../../../../org/bitcoins/core/crypto/AesCrypt$.html#decrypt(encrypted:org.bitcoins.core.crypto.AesEncryptedData,key:org.bitcoins.core.crypto.AesKey):Either[org.bitcoins.core.crypto.AesDecryptionException,scodec.bits.ByteVector]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -550,15 +553,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decrypt</span><span class="params">(<span name="encrypted">encrypted: <a href="AesEncryptedData.html" class="extype" name="org.bitcoins.core.crypto.AesEncryptedData">AesEncryptedData</a></span>, <span name="password">password: <a href="AesPassword.html" class="extype" name="org.bitcoins.core.crypto.AesPassword">AesPassword</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Either[+A,+B]=scala.util.Either[A,B]" class="extmbr" name="scala.Either">Either</a>[<a href="AesDecryptionException.html" class="extype" name="org.bitcoins.core.crypto.AesDecryptionException">AesDecryptionException</a>, <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a>]</span>
+        <span class="name">decrypt</span><span class="params">(<span name="encrypted">encrypted: <a href="AesEncryptedData.html" class="extype" name="org.bitcoins.core.crypto.AesEncryptedData">AesEncryptedData</a></span>, <span name="key">key: <a href="AesKey.html" class="extype" name="org.bitcoins.core.crypto.AesKey">AesKey</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Either[+A,+B]=scala.util.Either[A,B]" class="extmbr" name="scala.Either">Either</a>[<a href="AesDecryptionException.html" class="extype" name="org.bitcoins.core.crypto.AesDecryptionException">AesDecryptionException</a>, <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Decrypts the provided data
 </p>
     </li><li name="org.bitcoins.core.crypto.AesCrypt#encrypt" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="encrypt(plainText:scodec.bits.ByteVector,password:org.bitcoins.core.crypto.AesPassword):Either[org.bitcoins.core.crypto.AesEncryptionException,org.bitcoins.core.crypto.AesEncryptedData]"></a><a id="encrypt(ByteVector,AesPassword):Either[AesEncryptionException,AesEncryptedData]"></a>
+      <a id="encrypt(plainText:scodec.bits.ByteVector,key:org.bitcoins.core.crypto.AesKey):org.bitcoins.core.crypto.AesEncryptedData"></a><a id="encrypt(ByteVector,AesKey):AesEncryptedData"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/core/crypto/AesCrypt$.html#encrypt(plainText:scodec.bits.ByteVector,password:org.bitcoins.core.crypto.AesPassword):Either[org.bitcoins.core.crypto.AesEncryptionException,org.bitcoins.core.crypto.AesEncryptedData]" title="Permalink">
+      <a href="../../../../org/bitcoins/core/crypto/AesCrypt$.html#encrypt(plainText:scodec.bits.ByteVector,key:org.bitcoins.core.crypto.AesKey):org.bitcoins.core.crypto.AesEncryptedData" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -567,28 +570,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encrypt</span><span class="params">(<span name="plainText">plainText: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="password">password: <a href="AesPassword.html" class="extype" name="org.bitcoins.core.crypto.AesPassword">AesPassword</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Either[+A,+B]=scala.util.Either[A,B]" class="extmbr" name="scala.Either">Either</a>[<a href="AesEncryptionException.html" class="extype" name="org.bitcoins.core.crypto.AesEncryptionException">AesEncryptionException</a>, <a href="AesEncryptedData.html" class="extype" name="org.bitcoins.core.crypto.AesEncryptedData">AesEncryptedData</a>]</span>
+        <span class="name">encrypt</span><span class="params">(<span name="plainText">plainText: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="key">key: <a href="AesKey.html" class="extype" name="org.bitcoins.core.crypto.AesKey">AesKey</a></span>)</span><span class="result">: <a href="AesEncryptedData.html" class="extype" name="org.bitcoins.core.crypto.AesEncryptedData">AesEncryptedData</a></span>
       </span>
       
-      <p class="shortcomment cmt">Encrypts the given plaintext with the given password.</p>
-    </li><li name="org.bitcoins.core.crypto.AesCrypt#encryptExc" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="encryptExc(plainText:scodec.bits.ByteVector,password:org.bitcoins.core.crypto.AesPassword):org.bitcoins.core.crypto.AesEncryptedData"></a><a id="encryptExc(ByteVector,AesPassword):AesEncryptedData"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/crypto/AesCrypt$.html#encryptExc(plainText:scodec.bits.ByteVector,password:org.bitcoins.core.crypto.AesPassword):org.bitcoins.core.crypto.AesEncryptedData" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">encryptExc</span><span class="params">(<span name="plainText">plainText: <a href="http://scodec.org/api/scodec-bits/1.1.6/scodec/bits/ByteVector.html#scodec.bits.ByteVector" class="extype" name="scodec.bits.ByteVector">ByteVector</a></span>, <span name="password">password: <a href="AesPassword.html" class="extype" name="org.bitcoins.core.crypto.AesPassword">AesPassword</a></span>)</span><span class="result">: <a href="AesEncryptedData.html" class="extype" name="org.bitcoins.core.crypto.AesEncryptedData">AesEncryptedData</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Encrypts the given plaintext with the given password.</p><div class="fullcomment"><div class="comment cmt"><p>Encrypts the given plaintext with the given password. Throws if invalid
-data is provided.
-</p></div><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><a href="AesEncryptionException.html" class="extype" name="org.bitcoins.core.crypto.AesEncryptionException"><code>org.bitcoins.core.crypto.AesEncryptionException</code></a> If the encryption fails</p></span></dd></dl></div>
+      <p class="shortcomment cmt">Encrypts the given plaintext with the given key.</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -642,23 +627,6 @@ data is provided.
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="org.bitcoins.core.crypto.AesCrypt#getSecretKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getSecretKey(password:org.bitcoins.core.crypto.AesPassword,salt:org.bitcoins.core.crypto.AesSalt):javax.crypto.SecretKey"></a><a id="getSecretKey(AesPassword,AesSalt):SecretKey"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/core/crypto/AesCrypt$.html#getSecretKey(password:org.bitcoins.core.crypto.AesPassword,salt:org.bitcoins.core.crypto.AesSalt):javax.crypto.SecretKey" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getSecretKey</span><span class="params">(<span name="password">password: <a href="AesPassword.html" class="extype" name="org.bitcoins.core.crypto.AesPassword">AesPassword</a></span>, <span name="salt">salt: <a href="AesSalt.html" class="extype" name="org.bitcoins.core.crypto.AesSalt">AesSalt</a></span>)</span><span class="result">: <a href="https://docs.oracle.com/javase/11/docs/api/javax/crypto/SecretKey.html#javax.crypto.SecretKey" class="extype" name="javax.crypto.SecretKey">SecretKey</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Generates a secret key used for AES encryption and decryption
-given the provided password and salt.</p>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
