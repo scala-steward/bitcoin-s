@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+96-65264279-SNAPSHOT - org.bitcoins.chain.db.ChainDbManagement</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 96 - 65264279 - SNAPSHOT - org.bitcoins.chain.db.ChainDbManagement" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 96 65264279 SNAPSHOT org.bitcoins.chain.db.ChainDbManagement" />
+          <title>Bitcoin-S 0.1.0+130-b56fbb96-SNAPSHOT - org.bitcoins.chain.db.ChainDbManagement</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 130 - b56fbb96 - SNAPSHOT - org.bitcoins.chain.db.ChainDbManagement" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 130 b56fbb96 SNAPSHOT org.bitcoins.chain.db.ChainDbManagement" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+96-65264279-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+130-b56fbb96-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -345,7 +345,7 @@
         <span class="name">createAll</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../../db/AppConfig.html" class="extype" name="org.bitcoins.db.AppConfig">AppConfig</a></span>, <span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../db/DbManagement.html" class="extype" name="org.bitcoins.db.DbManagement">DbManagement</a></dd></dl></div>
+      <p class="shortcomment cmt">Creates all tables in our table list, in one SQL transaction</p><div class="fullcomment"><div class="comment cmt"><p>Creates all tables in our table list, in one SQL transaction</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../db/DbManagement.html" class="extype" name="org.bitcoins.db.DbManagement">DbManagement</a></dd></dl></div>
     </li><li name="org.bitcoins.chain.db.ChainDbManagement#createHeaderTable" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createHeaderTable(createIfNotExists:Boolean)(implicitconfig:org.bitcoins.chain.config.ChainAppConfig,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="createHeaderTable(Boolean)(ChainAppConfig,ExecutionContext):Future[Unit]"></a>
       <span class="permalink">
@@ -377,7 +377,7 @@
         <span class="name">createTable</span><span class="params">(<span name="table">table: <span class="extype" name="slick.lifted.Aliases.TableQuery">slick.jdbc.JdbcProfile.API.TableQuery</span>[_ &lt;: <span class="extype" name="slick.relational.RelationalProfile.API.Table">slick.jdbc.JdbcProfile.API.Table</span>[_]]</span>, <span name="createIfNotExists">createIfNotExists: <a href="http://www.scala-lang.org/api/2.12.8/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="../../db/AppConfig.html" class="extype" name="org.bitcoins.db.AppConfig">AppConfig</a></span>, <span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="http://www.scala-lang.org/api/2.12.8/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../db/DbManagement.html" class="extype" name="org.bitcoins.db.DbManagement">DbManagement</a></dd></dl></div>
+      <p class="shortcomment cmt">Creates the given table</p><div class="fullcomment"><div class="comment cmt"><p>Creates the given table</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../db/DbManagement.html" class="extype" name="org.bitcoins.db.DbManagement">DbManagement</a></dd></dl></div>
     </li><li name="org.bitcoins.db.DbManagement#dropAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="dropAll()(implicitconfig:org.bitcoins.db.AppConfig,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Unit]"></a><a id="dropAll()(AppConfig,ExecutionContext):Future[Unit]"></a>
       <span class="permalink">

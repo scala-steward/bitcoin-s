@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+96-65264279-SNAPSHOT - org.bitcoins.wallet.api.AddUtxoSuccess</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 96 - 65264279 - SNAPSHOT - org.bitcoins.wallet.api.AddUtxoSuccess" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 96 65264279 SNAPSHOT org.bitcoins.wallet.api.AddUtxoSuccess" />
+          <title>Bitcoin-S 0.1.0+130-b56fbb96-SNAPSHOT - org.bitcoins.wallet.api.AddUtxoSuccess</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 130 - b56fbb96 - SNAPSHOT - org.bitcoins.wallet.api.AddUtxoSuccess" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 130 b56fbb96 SNAPSHOT org.bitcoins.wallet.api.AddUtxoSuccess" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+96-65264279-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+130-b56fbb96-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -143,8 +143,8 @@
                         <a href="AddUtxoResult.html" title="">AddUtxoResult</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="" title=""></a>
-                        <a href="" title="">AddUtxoSuccess</a>
+                        <a class="class" href="" title="Contains the freshly added UTXO"></a>
+                        <a href="" title="Contains the freshly added UTXO">AddUtxoSuccess</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="class" href="AddressInfo.html" title="This class represents the result of querying for address info from our wallet"></a>
@@ -216,12 +216,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">AddUtxoSuccess</span><span class="params">(<span name="walletApi">walletApi: <a href="WalletApi.html" class="extype" name="org.bitcoins.wallet.api.WalletApi">WalletApi</a></span>)</span><span class="result"> extends <a href="AddUtxoResult.html" class="extype" name="org.bitcoins.wallet.api.AddUtxoResult">AddUtxoResult</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">AddUtxoSuccess</span><span class="params">(<span name="spendingInfo">spendingInfo: <a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a></span>)</span><span class="result"> extends <a href="AddUtxoResult.html" class="extype" name="org.bitcoins.wallet.api.AddUtxoResult">AddUtxoResult</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains the freshly added UTXO</p></div><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -272,9 +272,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.bitcoins.wallet.api.AddUtxoSuccess#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(walletApi:org.bitcoins.wallet.api.WalletApi):org.bitcoins.wallet.api.AddUtxoSuccess"></a><a id="&lt;init&gt;:AddUtxoSuccess"></a>
+      <a id="&lt;init&gt;(spendingInfo:org.bitcoins.wallet.models.SpendingInfoDb):org.bitcoins.wallet.api.AddUtxoSuccess"></a><a id="&lt;init&gt;:AddUtxoSuccess"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/AddUtxoSuccess.html#&lt;init&gt;(walletApi:org.bitcoins.wallet.api.WalletApi):org.bitcoins.wallet.api.AddUtxoSuccess" title="Permalink">
+      <a href="../../../../org/bitcoins/wallet/api/AddUtxoSuccess.html#&lt;init&gt;(spendingInfo:org.bitcoins.wallet.models.SpendingInfoDb):org.bitcoins.wallet.api.AddUtxoSuccess" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -283,7 +283,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">AddUtxoSuccess</span><span class="params">(<span name="walletApi">walletApi: <a href="WalletApi.html" class="extype" name="org.bitcoins.wallet.api.WalletApi">WalletApi</a></span>)</span>
+        <span class="name">AddUtxoSuccess</span><span class="params">(<span name="spendingInfo">spendingInfo: <a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a></span>)</span>
       </span>
       
       
@@ -403,22 +403,6 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.bitcoins.wallet.api.AddUtxoResult#flatMap" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="flatMap(f:org.bitcoins.wallet.api.AddUtxoResult=&gt;org.bitcoins.wallet.api.AddUtxoResult):Nothing"></a><a id="flatMap((AddUtxoResult)⇒AddUtxoResult):Nothing"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/AddUtxoSuccess.html#flatMap(f:org.bitcoins.wallet.api.AddUtxoResult=&gt;org.bitcoins.wallet.api.AddUtxoResult):Nothing" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">flatMap</span><span class="params">(<span name="f">f: (<a href="AddUtxoResult.html" class="extype" name="org.bitcoins.wallet.api.AddUtxoResult">AddUtxoResult</a>) ⇒ <a href="AddUtxoResult.html" class="extype" name="org.bitcoins.wallet.api.AddUtxoResult">AddUtxoResult</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Nothing.html#scala.Nothing" class="extype" name="scala.Nothing">Nothing</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AddUtxoResult.html" class="extype" name="org.bitcoins.wallet.api.AddUtxoResult">AddUtxoResult</a></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -456,22 +440,6 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.bitcoins.wallet.api.AddUtxoResult#map" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="map(success:org.bitcoins.wallet.api.AddUtxoSuccess=&gt;org.bitcoins.wallet.api.AddUtxoResult):Nothing"></a><a id="map((AddUtxoSuccess)⇒AddUtxoResult):Nothing"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/AddUtxoSuccess.html#map(success:org.bitcoins.wallet.api.AddUtxoSuccess=&gt;org.bitcoins.wallet.api.AddUtxoResult):Nothing" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">map</span><span class="params">(<span name="success">success: (<a href="" class="extype" name="org.bitcoins.wallet.api.AddUtxoSuccess">AddUtxoSuccess</a>) ⇒ <a href="AddUtxoResult.html" class="extype" name="org.bitcoins.wallet.api.AddUtxoResult">AddUtxoResult</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/Nothing.html#scala.Nothing" class="extype" name="scala.Nothing">Nothing</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AddUtxoResult.html" class="extype" name="org.bitcoins.wallet.api.AddUtxoResult">AddUtxoResult</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -530,6 +498,22 @@
                 <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.wallet.api.AddUtxoSuccess#spendingInfo" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="spendingInfo:org.bitcoins.wallet.models.SpendingInfoDb"></a><a id="spendingInfo:SpendingInfoDb"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/api/AddUtxoSuccess.html#spendingInfo:org.bitcoins.wallet.models.SpendingInfoDb" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">spendingInfo</span><span class="result">: <a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -614,22 +598,6 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.bitcoins.wallet.api.AddUtxoSuccess#walletApi" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="walletApi:org.bitcoins.wallet.api.WalletApi"></a><a id="walletApi:WalletApi"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/AddUtxoSuccess.html#walletApi:org.bitcoins.wallet.api.WalletApi" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">walletApi</span><span class="result">: <a href="WalletApi.html" class="extype" name="org.bitcoins.wallet.api.WalletApi">WalletApi</a></span>
-      </span>
-      
-      
     </li>
               </ol>
             </div>

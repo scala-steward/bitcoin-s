@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+96-65264279-SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 96 - 65264279 - SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 96 65264279 SNAPSHOT org.bitcoins.wallet.api.LockedWalletApi" />
+          <title>Bitcoin-S 0.1.0+130-b56fbb96-SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 130 - b56fbb96 - SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 130 b56fbb96 SNAPSHOT org.bitcoins.wallet.api.LockedWalletApi" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+96-65264279-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+130-b56fbb96-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -143,8 +143,8 @@
                         <a href="AddUtxoResult.html" title="">AddUtxoResult</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="AddUtxoSuccess.html" title=""></a>
-                        <a href="AddUtxoSuccess.html" title="">AddUtxoSuccess</a>
+                        <a class="class" href="AddUtxoSuccess.html" title="Contains the freshly added UTXO"></a>
+                        <a href="AddUtxoSuccess.html" title="Contains the freshly added UTXO">AddUtxoSuccess</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="class" href="AddressInfo.html" title="This class represents the result of querying for address info from our wallet"></a>
@@ -281,24 +281,7 @@
 
         <div class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="org.bitcoins.wallet.api.LockedWalletApi#addUtxo" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="addUtxo(transaction:org.bitcoins.core.protocol.transaction.Transaction,vout:org.bitcoins.core.number.UInt32):scala.concurrent.Future[org.bitcoins.wallet.api.AddUtxoResult]"></a><a id="addUtxo(Transaction,UInt32):Future[AddUtxoResult]"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#addUtxo(transaction:org.bitcoins.core.protocol.transaction.Transaction,vout:org.bitcoins.core.number.UInt32):scala.concurrent.Future[org.bitcoins.wallet.api.AddUtxoResult]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addUtxo</span><span class="params">(<span name="transaction">transaction: <a href="../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>, <span name="vout">vout: <a href="../../core/number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="AddUtxoResult.html" class="extype" name="org.bitcoins.wallet.api.AddUtxoResult">AddUtxoResult</a>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Adds the provided UTXO to the wallet, making it
-available for spending.</p>
-    </li><li name="org.bitcoins.wallet.api.WalletApi#ec" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="org.bitcoins.wallet.api.WalletApi#ec" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="ec:scala.concurrent.ExecutionContext"></a><a id="ec:ExecutionContext"></a>
       <span class="permalink">
       <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#ec:scala.concurrent.ExecutionContext" title="Permalink">
@@ -348,7 +331,7 @@ available for spending.</p>
         <span class="name">getBalance</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../core/currency/CurrencyUnit.html" class="extype" name="org.bitcoins.core.currency.CurrencyUnit">CurrencyUnit</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Sums up the value of all UTXOs in the wallet</p>
+      <p class="shortcomment cmt">Gets the sum of all confirmed UTXOs in this wallet</p>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getBloomFilter" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="getBloomFilter():scala.concurrent.Future[org.bitcoins.core.bloom.BloomFilter]"></a><a id="getBloomFilter():Future[BloomFilter]"></a>
       <span class="permalink">
@@ -421,6 +404,22 @@ received funds.
       </span>
       
       <p class="shortcomment cmt">Generates a new change address</p><div class="fullcomment"><div class="comment cmt"><p>Generates a new change address</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="org.bitcoins.wallet">org.bitcoins.wallet</a>] </dd></dl></div>
+    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getUnconfirmedBalance" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="getUnconfirmedBalance():scala.concurrent.Future[org.bitcoins.core.currency.CurrencyUnit]"></a><a id="getUnconfirmedBalance():Future[CurrencyUnit]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#getUnconfirmedBalance():scala.concurrent.Future[org.bitcoins.core.currency.CurrencyUnit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getUnconfirmedBalance</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../core/currency/CurrencyUnit.html" class="extype" name="org.bitcoins.core.currency.CurrencyUnit">CurrencyUnit</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Gets the sum of all unconfirmed UTXOs in this wallet</p>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#listAccounts" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="listAccounts():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.AccountDb]]"></a><a id="listAccounts():Future[Vector[AccountDb]]"></a>
       <span class="permalink">
@@ -454,9 +453,9 @@ received funds.
       
       
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#listUtxos" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="listUtxos():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb]]"></a><a id="listUtxos():Future[Vector[UTXOSpendingInfoDb]]"></a>
+      <a id="listUtxos():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]"></a><a id="listUtxos():Future[Vector[SpendingInfoDb]]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#listUtxos():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb]]" title="Permalink">
+      <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#listUtxos():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -465,12 +464,28 @@ received funds.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">listUtxos</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/UTXOSpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.UTXOSpendingInfoDb">UTXOSpendingInfoDb</a>]]</span>
+        <span class="name">listUtxos</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]]</span>
       </span>
       
       <p class="shortcomment cmt">If a UTXO is spent outside of the wallet, we
 need to remove it from the database so it won't be
 attempted spent again by us.</p>
+    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#processTransaction" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="processTransaction(transaction:org.bitcoins.core.protocol.transaction.Transaction,confirmations:Int):scala.concurrent.Future[org.bitcoins.wallet.api.LockedWalletApi]"></a><a id="processTransaction(Transaction,Int):Future[LockedWalletApi]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#processTransaction(transaction:org.bitcoins.core.protocol.transaction.Transaction,confirmations:Int):scala.concurrent.Future[org.bitcoins.wallet.api.LockedWalletApi]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processTransaction</span><span class="params">(<span name="transaction">transaction: <a href="../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>, <span name="confirmations">confirmations: <a href="http://www.scala-lang.org/api/2.12.8/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="" class="extype" name="org.bitcoins.wallet.api.LockedWalletApi">LockedWalletApi</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Processes the given transaction, updating our DB state if it's relevant to us.</p><div class="fullcomment"><div class="comment cmt"><p>Processes the given transaction, updating our DB state if it's relevant to us.</p></div><dl class="paramcmts block"><dt class="param">transaction</dt><dd class="cmt"><p>The transacton we're processing</p></dd></dl></div>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#unlock" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="unlock(passphrase:org.bitcoins.core.crypto.AesPassword):org.bitcoins.wallet.api.UnlockWalletResult"></a><a id="unlock(AesPassword):UnlockWalletResult"></a>
       <span class="permalink">

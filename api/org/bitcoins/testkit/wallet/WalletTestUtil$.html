@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+96-65264279-SNAPSHOT - org.bitcoins.testkit.wallet.WalletTestUtil</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 96 - 65264279 - SNAPSHOT - org.bitcoins.testkit.wallet.WalletTestUtil" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 96 65264279 SNAPSHOT org.bitcoins.testkit.wallet.WalletTestUtil" />
+          <title>Bitcoin-S 0.1.0+130-b56fbb96-SNAPSHOT - org.bitcoins.testkit.wallet.WalletTestUtil</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 130 - b56fbb96 - SNAPSHOT - org.bitcoins.testkit.wallet.WalletTestUtil" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 130 b56fbb96 SNAPSHOT org.bitcoins.testkit.wallet.WalletTestUtil" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+96-65264279-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+130-b56fbb96-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -397,9 +397,9 @@
       
       
     </li><li name="org.bitcoins.testkit.wallet.WalletTestUtil#freshXpub" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="freshXpub:org.bitcoins.core.crypto.ExtPublicKey"></a><a id="freshXpub:ExtPublicKey"></a>
+      <a id="freshXpub():org.bitcoins.core.crypto.ExtPublicKey"></a><a id="freshXpub():ExtPublicKey"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/testkit/wallet/WalletTestUtil$.html#freshXpub:org.bitcoins.core.crypto.ExtPublicKey" title="Permalink">
+      <a href="../../../../org/bitcoins/testkit/wallet/WalletTestUtil$.html#freshXpub():org.bitcoins.core.crypto.ExtPublicKey" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -408,7 +408,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">freshXpub</span><span class="result">: <a href="../../core/crypto/ExtPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ExtPublicKey">ExtPublicKey</a></span>
+        <span class="name">freshXpub</span><span class="params">()</span><span class="result">: <a href="../../core/crypto/ExtPublicKey.html" class="extype" name="org.bitcoins.core.crypto.ExtPublicKey">ExtPublicKey</a></span>
       </span>
       
       
@@ -470,6 +470,24 @@
       </span>
       
       
+    </li><li name="org.bitcoins.testkit.wallet.WalletTestUtil#insertIncomingTxo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="insertIncomingTxo(daos:org.bitcoins.testkit.fixtures.WalletDAOs,utxo:org.bitcoins.wallet.models.SpendingInfoDb)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[(org.bitcoins.wallet.models.IncomingWalletTXO,org.bitcoins.wallet.models.AddressDb)]"></a><a id="insertIncomingTxo(WalletDAOs,SpendingInfoDb)(ExecutionContext):Future[(IncomingWalletTXO,AddressDb)]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/testkit/wallet/WalletTestUtil$.html#insertIncomingTxo(daos:org.bitcoins.testkit.fixtures.WalletDAOs,utxo:org.bitcoins.wallet.models.SpendingInfoDb)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[(org.bitcoins.wallet.models.IncomingWalletTXO,org.bitcoins.wallet.models.AddressDb)]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">insertIncomingTxo</span><span class="params">(<span name="daos">daos: <a href="../fixtures/WalletDAOs.html" class="extype" name="org.bitcoins.testkit.fixtures.WalletDAOs">WalletDAOs</a></span>, <span name="utxo">utxo: <a href="../../wallet/models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/ExecutionContext.html#scala.concurrent.ExecutionContext" class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[(<a href="../../wallet/models/IncomingWalletTXO.html" class="extype" name="org.bitcoins.wallet.models.IncomingWalletTXO">IncomingWalletTXO</a>, <a href="../../wallet/models/AddressDb.html" class="extype" name="org.bitcoins.wallet.models.AddressDb">AddressDb</a>)]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Inserts a incoming TXO, and returns it with the address it was sent to</p><div class="fullcomment"><div class="comment cmt"><p>Inserts a incoming TXO, and returns it with the address it was sent to</p><p>This method also does some asserts on the result, to make sure what
+we're writing and reading matches up
+</p></div></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -576,6 +594,22 @@
       </span>
       
       <p class="shortcomment cmt">Sample legacy HD path</p>
+    </li><li name="org.bitcoins.testkit.wallet.WalletTestUtil#sampleLegacyUTXO" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sampleLegacyUTXO:org.bitcoins.wallet.models.LegacySpendingInfo"></a><a id="sampleLegacyUTXO:LegacySpendingInfo"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/testkit/wallet/WalletTestUtil$.html#sampleLegacyUTXO:org.bitcoins.wallet.models.LegacySpendingInfo" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sampleLegacyUTXO</span><span class="result">: <a href="../../wallet/models/LegacySpendingInfo.html" class="extype" name="org.bitcoins.wallet.models.LegacySpendingInfo">LegacySpendingInfo</a></span>
+      </span>
+      
+      
     </li><li name="org.bitcoins.testkit.wallet.WalletTestUtil#sampleMnemonic" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="sampleMnemonic:org.bitcoins.core.crypto.MnemonicCode"></a><a id="sampleMnemonic:MnemonicCode"></a>
       <span class="permalink">
@@ -639,6 +673,22 @@ To use the same key values each time
       </span>
       <span class="symbol">
         <span class="name">sampleSegwitPath</span><span class="result">: <a href="../../core/hd/SegWitHDPath.html" class="extype" name="org.bitcoins.core.hd.SegWitHDPath">SegWitHDPath</a></span>
+      </span>
+      
+      
+    </li><li name="org.bitcoins.testkit.wallet.WalletTestUtil#sampleSegwitUTXO" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sampleSegwitUTXO:org.bitcoins.wallet.models.SegwitV0SpendingInfo"></a><a id="sampleSegwitUTXO:SegwitV0SpendingInfo"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/testkit/wallet/WalletTestUtil$.html#sampleSegwitUTXO:org.bitcoins.wallet.models.SegwitV0SpendingInfo" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sampleSegwitUTXO</span><span class="result">: <a href="../../wallet/models/SegwitV0SpendingInfo.html" class="extype" name="org.bitcoins.wallet.models.SegwitV0SpendingInfo">SegwitV0SpendingInfo</a></span>
       </span>
       
       

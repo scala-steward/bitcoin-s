@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+96-65264279-SNAPSHOT - org.bitcoins.wallet.api.CoinSelector</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 96 - 65264279 - SNAPSHOT - org.bitcoins.wallet.api.CoinSelector" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 96 65264279 SNAPSHOT org.bitcoins.wallet.api.CoinSelector" />
+          <title>Bitcoin-S 0.1.0+130-b56fbb96-SNAPSHOT - org.bitcoins.wallet.api.CoinSelector</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 130 - b56fbb96 - SNAPSHOT - org.bitcoins.wallet.api.CoinSelector" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 130 b56fbb96 SNAPSHOT org.bitcoins.wallet.api.CoinSelector" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+96-65264279-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+130-b56fbb96-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -143,8 +143,8 @@
                         <a href="AddUtxoResult.html" title="">AddUtxoResult</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="AddUtxoSuccess.html" title=""></a>
-                        <a href="AddUtxoSuccess.html" title="">AddUtxoSuccess</a>
+                        <a class="class" href="AddUtxoSuccess.html" title="Contains the freshly added UTXO"></a>
+                        <a href="AddUtxoSuccess.html" title="Contains the freshly added UTXO">AddUtxoSuccess</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="class" href="AddressInfo.html" title="This class represents the result of querying for address info from our wallet"></a>
@@ -334,9 +334,9 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.bitcoins.wallet.api.CoinSelector#accumulate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="accumulate(walletUtxos:Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb]"></a><a id="accumulate(Vector[UTXOSpendingInfoDb],Vector[TransactionOutput],FeeUnit):Vector[UTXOSpendingInfoDb]"></a>
+      <a id="accumulate(walletUtxos:Vector[org.bitcoins.wallet.models.SpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.SpendingInfoDb]"></a><a id="accumulate(Vector[SpendingInfoDb],Vector[TransactionOutput],FeeUnit):Vector[SpendingInfoDb]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/CoinSelector.html#accumulate(walletUtxos:Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb]" title="Permalink">
+      <a href="../../../../org/bitcoins/wallet/api/CoinSelector.html#accumulate(walletUtxos:Vector[org.bitcoins.wallet.models.SpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.SpendingInfoDb]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -345,14 +345,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">accumulate</span><span class="params">(<span name="walletUtxos">walletUtxos: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/UTXOSpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.UTXOSpendingInfoDb">UTXOSpendingInfoDb</a>]</span>, <span name="outputs">outputs: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../../core/protocol/transaction/TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>]</span>, <span name="feeRate">feeRate: <a href="../../core/wallet/fee/FeeUnit.html" class="extype" name="org.bitcoins.core.wallet.fee.FeeUnit">FeeUnit</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/UTXOSpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.UTXOSpendingInfoDb">UTXOSpendingInfoDb</a>]</span>
+        <span class="name">accumulate</span><span class="params">(<span name="walletUtxos">walletUtxos: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]</span>, <span name="outputs">outputs: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../../core/protocol/transaction/TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>]</span>, <span name="feeRate">feeRate: <a href="../../core/wallet/fee/FeeUnit.html" class="extype" name="org.bitcoins.core.wallet.fee.FeeUnit">FeeUnit</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Greedily selects from walletUtxos in order, skipping outputs with values below their fees</p>
     </li><li name="org.bitcoins.wallet.api.CoinSelector#accumulateLargest" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="accumulateLargest(walletUtxos:Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb]"></a><a id="accumulateLargest(Vector[UTXOSpendingInfoDb],Vector[TransactionOutput],FeeUnit):Vector[UTXOSpendingInfoDb]"></a>
+      <a id="accumulateLargest(walletUtxos:Vector[org.bitcoins.wallet.models.SpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.SpendingInfoDb]"></a><a id="accumulateLargest(Vector[SpendingInfoDb],Vector[TransactionOutput],FeeUnit):Vector[SpendingInfoDb]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/CoinSelector.html#accumulateLargest(walletUtxos:Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb]" title="Permalink">
+      <a href="../../../../org/bitcoins/wallet/api/CoinSelector.html#accumulateLargest(walletUtxos:Vector[org.bitcoins.wallet.models.SpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.SpendingInfoDb]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -361,7 +361,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">accumulateLargest</span><span class="params">(<span name="walletUtxos">walletUtxos: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/UTXOSpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.UTXOSpendingInfoDb">UTXOSpendingInfoDb</a>]</span>, <span name="outputs">outputs: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../../core/protocol/transaction/TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>]</span>, <span name="feeRate">feeRate: <a href="../../core/wallet/fee/FeeUnit.html" class="extype" name="org.bitcoins.core.wallet.fee.FeeUnit">FeeUnit</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/UTXOSpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.UTXOSpendingInfoDb">UTXOSpendingInfoDb</a>]</span>
+        <span class="name">accumulateLargest</span><span class="params">(<span name="walletUtxos">walletUtxos: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]</span>, <span name="outputs">outputs: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../../core/protocol/transaction/TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>]</span>, <span name="feeRate">feeRate: <a href="../../core/wallet/fee/FeeUnit.html" class="extype" name="org.bitcoins.core.wallet.fee.FeeUnit">FeeUnit</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Greedily selects from walletUtxos starting with the largest outputs, skipping outputs with values
@@ -369,9 +369,9 @@ below their fees.</p><div class="fullcomment"><div class="comment cmt"><p>Greedi
 below their fees. Better for high fee environments than accumulateSmallestViable.
 </p></div></div>
     </li><li name="org.bitcoins.wallet.api.CoinSelector#accumulateSmallestViable" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="accumulateSmallestViable(walletUtxos:Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb]"></a><a id="accumulateSmallestViable(Vector[UTXOSpendingInfoDb],Vector[TransactionOutput],FeeUnit):Vector[UTXOSpendingInfoDb]"></a>
+      <a id="accumulateSmallestViable(walletUtxos:Vector[org.bitcoins.wallet.models.SpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.SpendingInfoDb]"></a><a id="accumulateSmallestViable(Vector[SpendingInfoDb],Vector[TransactionOutput],FeeUnit):Vector[SpendingInfoDb]"></a>
       <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/CoinSelector.html#accumulateSmallestViable(walletUtxos:Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.UTXOSpendingInfoDb]" title="Permalink">
+      <a href="../../../../org/bitcoins/wallet/api/CoinSelector.html#accumulateSmallestViable(walletUtxos:Vector[org.bitcoins.wallet.models.SpendingInfoDb],outputs:Vector[org.bitcoins.core.protocol.transaction.TransactionOutput],feeRate:org.bitcoins.core.wallet.fee.FeeUnit):Vector[org.bitcoins.wallet.models.SpendingInfoDb]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -380,7 +380,7 @@ below their fees. Better for high fee environments than accumulateSmallestViable
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">accumulateSmallestViable</span><span class="params">(<span name="walletUtxos">walletUtxos: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/UTXOSpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.UTXOSpendingInfoDb">UTXOSpendingInfoDb</a>]</span>, <span name="outputs">outputs: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../../core/protocol/transaction/TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>]</span>, <span name="feeRate">feeRate: <a href="../../core/wallet/fee/FeeUnit.html" class="extype" name="org.bitcoins.core.wallet.fee.FeeUnit">FeeUnit</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/UTXOSpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.UTXOSpendingInfoDb">UTXOSpendingInfoDb</a>]</span>
+        <span class="name">accumulateSmallestViable</span><span class="params">(<span name="walletUtxos">walletUtxos: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]</span>, <span name="outputs">outputs: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../../core/protocol/transaction/TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>]</span>, <span name="feeRate">feeRate: <a href="../../core/wallet/fee/FeeUnit.html" class="extype" name="org.bitcoins.core.wallet.fee.FeeUnit">FeeUnit</a></span>)</span><span class="result">: <a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Greedily selects from walletUtxos starting with the smallest outputs, skipping outputs with values
