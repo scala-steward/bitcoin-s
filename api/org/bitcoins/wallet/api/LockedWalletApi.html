@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+156-3556788c-SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 156 - 3556788c - SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 156 3556788c SNAPSHOT org.bitcoins.wallet.api.LockedWalletApi" />
+          <title>Bitcoin-S 0.1.0+157-9101aece-SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 157 - 9101aece - SNAPSHOT - org.bitcoins.wallet.api.LockedWalletApi" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 157 9101aece SNAPSHOT org.bitcoins.wallet.api.LockedWalletApi" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+156-3556788c-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+157-9101aece-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -316,22 +316,6 @@
 </p><div class="fullcomment"><div class="comment cmt"><p>Mimics the <code>getaddressinfo</code> RPC call in Bitcoin Core
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>If the address is found in our database <code>Some(address)</code>
         is returned, otherwise <code>None</code></p></dd></dl></div>
-    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getBalance" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="getBalance():scala.concurrent.Future[org.bitcoins.core.currency.CurrencyUnit]"></a><a id="getBalance():Future[CurrencyUnit]"></a>
-      <span class="permalink">
-      <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#getBalance():scala.concurrent.Future[org.bitcoins.core.currency.CurrencyUnit]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getBalance</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../core/currency/CurrencyUnit.html" class="extype" name="org.bitcoins.core.currency.CurrencyUnit">CurrencyUnit</a>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Gets the sum of all confirmed UTXOs in this wallet</p>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getBloomFilter" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="getBloomFilter():scala.concurrent.Future[org.bitcoins.core.bloom.BloomFilter]"></a><a id="getBloomFilter():Future[BloomFilter]"></a>
       <span class="permalink">
@@ -349,6 +333,22 @@
       
       <p class="shortcomment cmt">Retrieves a bloom filter that that can be sent to a P2P network node
 to get information about our transactions, pubkeys and scripts.</p>
+    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getConfirmedBalance" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="getConfirmedBalance():scala.concurrent.Future[org.bitcoins.core.currency.CurrencyUnit]"></a><a id="getConfirmedBalance():Future[CurrencyUnit]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#getConfirmedBalance():scala.concurrent.Future[org.bitcoins.core.currency.CurrencyUnit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getConfirmedBalance</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../core/currency/CurrencyUnit.html" class="extype" name="org.bitcoins.core.currency.CurrencyUnit">CurrencyUnit</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Gets the sum of all confirmed UTXOs in this wallet</p>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getDefaultAccount" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="getDefaultAccount():scala.concurrent.Future[org.bitcoins.wallet.models.AccountDb]"></a><a id="getDefaultAccount():Future[AccountDb]"></a>
       <span class="permalink">
@@ -467,9 +467,7 @@ received funds.
         <span class="name">listUtxos</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="../models/SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]]</span>
       </span>
       
-      <p class="shortcomment cmt">If a UTXO is spent outside of the wallet, we
-need to remove it from the database so it won't be
-attempted spent again by us.</p>
+      <p class="shortcomment cmt">Lists unspent transaction outputs in the wallet</p>
     </li><li name="org.bitcoins.wallet.api.LockedWalletApi#processTransaction" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="processTransaction(transaction:org.bitcoins.core.protocol.transaction.Transaction,confirmations:Int):scala.concurrent.Future[org.bitcoins.wallet.api.LockedWalletApi]"></a><a id="processTransaction(Transaction,Int):Future[LockedWalletApi]"></a>
       <span class="permalink">
@@ -663,6 +661,22 @@ making it possible to send transactions.</p>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.bitcoins.wallet.api.LockedWalletApi#getBalance" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getBalance():scala.concurrent.Future[org.bitcoins.core.currency.CurrencyUnit]"></a><a id="getBalance():Future[CurrencyUnit]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/api/LockedWalletApi.html#getBalance():scala.concurrent.Future[org.bitcoins.core.currency.CurrencyUnit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getBalance</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../core/currency/CurrencyUnit.html" class="extype" name="org.bitcoins.core.currency.CurrencyUnit">CurrencyUnit</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Gets the sum of all UTXOs in this wallet</p>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">

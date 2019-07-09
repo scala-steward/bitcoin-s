@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+156-3556788c-SNAPSHOT - org.bitcoins.core.protocol.transaction</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 156 - 3556788c - SNAPSHOT - org.bitcoins.core.protocol.transaction" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 156 3556788c SNAPSHOT org.bitcoins.core.protocol.transaction" />
+          <title>Bitcoin-S 0.1.0+157-9101aece-SNAPSHOT - org.bitcoins.core.protocol.transaction</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 157 - 9101aece - SNAPSHOT - org.bitcoins.core.protocol.transaction" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 157 9101aece SNAPSHOT org.bitcoins.core.protocol.transaction" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+156-3556788c-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+157-9101aece-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -215,8 +215,8 @@
                         <a href="EmptyTransactionInput$.html" title="">EmptyTransactionInput</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="object" href="EmptyTransactionOutPoint$.html" title="UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol requires the vout to be -1, which is serialized as &quot;0xFFFFFFFF&quot;."></a>
-                        <a href="EmptyTransactionOutPoint$.html" title="UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol requires the vout to be -1, which is serialized as &quot;0xFFFFFFFF&quot;.">EmptyTransactionOutPoint</a>
+                        <a class="object" href="EmptyTransactionOutPoint$.html" title="UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol requires the vout to be -1, which is serialized as 0xFFFFFFFF."></a>
+                        <a href="EmptyTransactionOutPoint$.html" title="UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol requires the vout to be -1, which is serialized as 0xFFFFFFFF.">EmptyTransactionOutPoint</a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
                         <a class="object" href="EmptyTransactionOutput$.html" title=""></a>
@@ -243,12 +243,12 @@
                         <a href="TransactionInput.html" title="Created by chris on 12/26/15.">TransactionInput</a>
                       </li><li class="current-entities indented5">
                         <a class="object" href="TransactionOutPoint$.html" title=""></a>
-                        <a class="class" href="TransactionOutPoint.html" title="Created by chris on 12/26/15."></a>
-                        <a href="TransactionOutPoint.html" title="Created by chris on 12/26/15.">TransactionOutPoint</a>
+                        <a class="class" href="TransactionOutPoint.html" title=""></a>
+                        <a href="TransactionOutPoint.html" title="">TransactionOutPoint</a>
                       </li><li class="current-entities indented5">
                         <a class="object" href="TransactionOutput$.html" title=""></a>
-                        <a class="class" href="TransactionOutput.html" title="Created by chris on 12/26/15."></a>
-                        <a href="TransactionOutput.html" title="Created by chris on 12/26/15.">TransactionOutput</a>
+                        <a class="class" href="TransactionOutput.html" title=""></a>
+                        <a href="TransactionOutput.html" title="">TransactionOutput</a>
                       </li><li class="current-entities indented5">
                         <a class="object" href="TransactionWitness$.html" title=""></a>
                         <a class="class" href="TransactionWitness.html" title="Created by chris on 11/21/16."></a>
@@ -428,38 +428,38 @@ and arbitrary data inside the script signature
       <p class="shortcomment cmt">Created by chris on 12/26/15.</p><div class="fullcomment"><div class="comment cmt"><p>Created by chris on 12/26/15.
 Algebraic data type that represents a transaction input
 </p></div></div>
-    </li><li name="org.bitcoins.core.protocol.transaction.TransactionOutPoint" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="TransactionOutPointextendsNetworkElement"></a><a id="TransactionOutPoint:TransactionOutPoint"></a>
+    </li><li name="org.bitcoins.core.protocol.transaction.TransactionOutPoint" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TransactionOutPointextendsNetworkElementwithProductwithSerializable"></a><a id="TransactionOutPoint:TransactionOutPoint"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/core/protocol/transaction/index.html#TransactionOutPointextendsNetworkElement" title="Permalink">
+      <a href="../../../../../org/bitcoins/core/protocol/transaction/index.html#TransactionOutPointextendsNetworkElementwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">sealed abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Created by chris on 12/26/15." href="TransactionOutPoint.html"><span class="name">TransactionOutPoint</span></a><span class="result"> extends <a href="../NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a></span>
+        <a title="" href="TransactionOutPoint.html"><span class="name">TransactionOutPoint</span></a><span class="params">(<span name="txId">txId: <a href="../../crypto/DoubleSha256Digest.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256Digest">DoubleSha256Digest</a></span>, <span name="vout">vout: <a href="../../number/UInt32.html" class="extype" name="org.bitcoins.core.number.UInt32">UInt32</a></span>)</span><span class="result"> extends <a href="../NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      <p class="shortcomment cmt">Created by chris on 12/26/15.</p>
-    </li><li name="org.bitcoins.core.protocol.transaction.TransactionOutput" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="TransactionOutputextendsNetworkElement"></a><a id="TransactionOutput:TransactionOutput"></a>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">vout</dt><dd class="cmt"><p>The output index in the parent transaction for the output we are spending</p></dd></dl></div>
+    </li><li name="org.bitcoins.core.protocol.transaction.TransactionOutput" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TransactionOutputextendsNetworkElementwithProductwithSerializable"></a><a id="TransactionOutput:TransactionOutput"></a>
       <span class="permalink">
-      <a href="../../../../../org/bitcoins/core/protocol/transaction/index.html#TransactionOutputextendsNetworkElement" title="Permalink">
+      <a href="../../../../../org/bitcoins/core/protocol/transaction/index.html#TransactionOutputextendsNetworkElementwithProductwithSerializable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">sealed abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Created by chris on 12/26/15." href="TransactionOutput.html"><span class="name">TransactionOutput</span></a><span class="result"> extends <a href="../NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a></span>
+        <a title="" href="TransactionOutput.html"><span class="name">TransactionOutput</span></a><span class="params">(<span name="value">value: <a href="../../currency/CurrencyUnit.html" class="extype" name="org.bitcoins.core.currency.CurrencyUnit">CurrencyUnit</a></span>, <span name="scriptPubKey">scriptPubKey: <a href="../script/ScriptPubKey.html" class="extype" name="org.bitcoins.core.protocol.script.ScriptPubKey">ScriptPubKey</a></span>)</span><span class="result"> extends <a href="../NetworkElement.html" class="extype" name="org.bitcoins.core.protocol.NetworkElement">NetworkElement</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      <p class="shortcomment cmt">Created by chris on 12/26/15.</p>
+      
     </li><li name="org.bitcoins.core.protocol.transaction.TransactionWitness" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="TransactionWitnessextendsNetworkElement"></a><a id="TransactionWitness:TransactionWitness"></a>
       <span class="permalink">
@@ -611,15 +611,13 @@ The witness data for <a href="../script/ScriptSignature.html" class="extype" nam
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol requires the vout to be -1, which is serialized as &quot;0xFFFFFFFF&quot;." href="EmptyTransactionOutPoint$.html"><span class="name">EmptyTransactionOutPoint</span></a><span class="result"> extends <a href="TransactionOutPoint.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutPoint">TransactionOutPoint</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol requires the vout to be -1, which is serialized as 0xFFFFFFFF." href="EmptyTransactionOutPoint$.html"><span class="name">EmptyTransactionOutPoint</span></a><span class="result"> extends <a href="TransactionOutPoint.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutPoint">TransactionOutPoint</a></span>
       </span>
       
-      <p class="shortcomment cmt">UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol requires the vout to be -1, which is serialized
-as &quot;0xFFFFFFFF&quot;.</p><div class="fullcomment"><div class="comment cmt"><p>UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol requires the vout to be -1, which is serialized
-as &quot;0xFFFFFFFF&quot;.
-https://github.com/bitcoin/bitcoin/blob/d612837814020ae832499d18e6ee5eb919a87907/src/primitives/transaction.h
-http://stackoverflow.com/questions/2711522/what-happens-if-i-assign-a-negative-value-to-an-unsigned-variable
-</p></div></div>
+      <p class="shortcomment cmt">UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol
+requires the vout to be -1, which is serialized as <code>0xFFFFFFFF</code>.</p><div class="fullcomment"><div class="comment cmt"><p>UInt32s cannot hold negative numbers, but sometimes the Bitcoin Protocol
+requires the vout to be -1, which is serialized as <code>0xFFFFFFFF</code>.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/bitcoin/bitcoin/blob/d612837814020ae832499d18e6ee5eb919a87907/src/primitives/transaction.h" target="_blank">transaction.h</a></p></span><span class="cmt"><p>http://stackoverflow.com/questions/2711522/what-happens-if-i-assign-a-negative-value-to-an-unsigned-variable</p></span></dd></dl></div>
     </li><li name="org.bitcoins.core.protocol.transaction.EmptyTransactionOutput" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="EmptyTransactionOutput"></a><a id="EmptyTransactionOutput:EmptyTransactionOutput"></a>
       <span class="permalink">
@@ -632,7 +630,7 @@ http://stackoverflow.com/questions/2711522/what-happens-if-i-assign-a-negative-v
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="EmptyTransactionOutput$.html"><span class="name">EmptyTransactionOutput</span></a><span class="result"> extends <a href="TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="EmptyTransactionOutput$.html"><span class="name">EmptyTransactionOutput</span></a><span class="result"> extends <a href="TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a></span>
       </span>
       
       
@@ -712,7 +710,7 @@ http://stackoverflow.com/questions/2711522/what-happens-if-i-assign-a-negative-v
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="TransactionOutPoint$.html"><span class="name">TransactionOutPoint</span></a><span class="result"> extends <a href="../../util/Factory.html" class="extype" name="org.bitcoins.core.util.Factory">Factory</a>[<a href="TransactionOutPoint.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutPoint">TransactionOutPoint</a>]</span>
+        <a title="" href="TransactionOutPoint$.html"><span class="name">TransactionOutPoint</span></a><span class="result"> extends <a href="../../util/Factory.html" class="extype" name="org.bitcoins.core.util.Factory">Factory</a>[<a href="TransactionOutPoint.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutPoint">TransactionOutPoint</a>] with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
@@ -728,7 +726,7 @@ http://stackoverflow.com/questions/2711522/what-happens-if-i-assign-a-negative-v
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="TransactionOutput$.html"><span class="name">TransactionOutput</span></a><span class="result"> extends <a href="../../util/Factory.html" class="extype" name="org.bitcoins.core.util.Factory">Factory</a>[<a href="TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>]</span>
+        <a title="" href="TransactionOutput$.html"><span class="name">TransactionOutput</span></a><span class="result"> extends <a href="../../util/Factory.html" class="extype" name="org.bitcoins.core.util.Factory">Factory</a>[<a href="TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>] with <a href="http://www.scala-lang.org/api/2.12.8/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       

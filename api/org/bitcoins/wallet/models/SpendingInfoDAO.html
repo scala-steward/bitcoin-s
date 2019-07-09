@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Bitcoin-S 0.1.0+156-3556788c-SNAPSHOT - org.bitcoins.wallet.models.SpendingInfoDAO</title>
-          <meta name="description" content="Bitcoin - S 0.1.0 156 - 3556788c - SNAPSHOT - org.bitcoins.wallet.models.SpendingInfoDAO" />
-          <meta name="keywords" content="Bitcoin S 0.1.0 156 3556788c SNAPSHOT org.bitcoins.wallet.models.SpendingInfoDAO" />
+          <title>Bitcoin-S 0.1.0+157-9101aece-SNAPSHOT - org.bitcoins.wallet.models.SpendingInfoDAO</title>
+          <meta name="description" content="Bitcoin - S 0.1.0 157 - 9101aece - SNAPSHOT - org.bitcoins.wallet.models.SpendingInfoDAO" />
+          <meta name="keywords" content="Bitcoin S 0.1.0 157 9101aece SNAPSHOT org.bitcoins.wallet.models.SpendingInfoDAO" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+156-3556788c-SNAPSHOT</span></span>
+        <span id="doc-title">Bitcoin-S<span id="doc-version">0.1.0+157-9101aece-SNAPSHOT</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -163,18 +163,6 @@
                         <a href="AddressTable.html" title="todo: this needs design rework.">AddressTable</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
-                        <a class="class" href="IncomingTXOTable.html" title=""></a>
-                        <a href="IncomingTXOTable.html" title="">IncomingTXOTable</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="IncomingTxoDAO.html" title="DAO for incoming transaction outputs"></a>
-                        <a href="IncomingTxoDAO.html" title="DAO for incoming transaction outputs">IncomingTxoDAO</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="IncomingWalletTXO.html" title="A transaction output that has been spent to our wallet"></a>
-                        <a href="IncomingWalletTXO.html" title="A transaction output that has been spent to our wallet">IncomingWalletTXO</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
                         <a class="class" href="LegacyAddressDb.html" title="P2PKH"></a>
                         <a href="LegacyAddressDb.html" title="P2PKH">LegacyAddressDb</a>
                       </li><li class="current-entities indented4">
@@ -185,18 +173,6 @@
                         <span class="separator"></span>
                         <a class="class" href="NestedSegWitAddressDb.html" title="Segwit P2PKH-in-P2SH"></a>
                         <a href="NestedSegWitAddressDb.html" title="Segwit P2PKH-in-P2SH">NestedSegWitAddressDb</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="OutgoingTXOTable.html" title=""></a>
-                        <a href="OutgoingTXOTable.html" title="">OutgoingTXOTable</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="OutgoingTxoDAO.html" title="DAO for outgoing transaction outputs"></a>
-                        <a href="OutgoingTxoDAO.html" title="DAO for outgoing transaction outputs">OutgoingTxoDAO</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="OutgoingWalletTXO.html" title=""></a>
-                        <a href="OutgoingWalletTXO.html" title="">OutgoingWalletTXO</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="class" href="SegWitAddressDb.html" title="Segwit P2PKH"></a>
@@ -217,14 +193,6 @@
                         <span class="separator"></span>
                         <a class="class" href="SpendingInfoTable.html" title="This table stores the necessary information to spend a TXO at a later point in time."></a>
                         <a href="SpendingInfoTable.html" title="This table stores the necessary information to spend a TXO at a later point in time.">SpendingInfoTable</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="trait" href="WalletTXO.html" title="A transaction output that's relevant to our wallet"></a>
-                        <a href="WalletTXO.html" title="A transaction output that's relevant to our wallet">WalletTXO</a>
-                      </li><li class="current-entities indented4">
-                        <span class="separator"></span>
-                        <a class="class" href="WalletTXOTable.html" title="Table of outputs relevant to our wallet, somehow."></a>
-                        <a href="WalletTXOTable.html" title="Table of outputs relevant to our wallet, somehow.">WalletTXOTable</a>
                       </li>
               </ul>
             </div>
@@ -585,6 +553,22 @@
       </span>
       
       <p class="shortcomment cmt">Finds all elements in the table</p><div class="fullcomment"><div class="comment cmt"><p>Finds all elements in the table</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../db/CRUD.html" class="extype" name="org.bitcoins.db.CRUD">CRUD</a></dd></dl></div>
+    </li><li name="org.bitcoins.wallet.models.SpendingInfoDAO#findAllUnspent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findAllUnspent():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]"></a><a id="findAllUnspent():Future[Vector[SpendingInfoDb]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/models/SpendingInfoDAO.html#findAllUnspent():scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findAllUnspent</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Enumerates all unspent TX outputs in the wallet</p>
     </li><li name="org.bitcoins.db.CRUD#findByPrimaryKey" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="findByPrimaryKey(id:PrimaryKeyType):slick.jdbc.SQLiteProfile.api.Query[slick.jdbc.SQLiteProfile.api.Table[_],T,Seq]"></a><a id="findByPrimaryKey(Long):slick.jdbc.JdbcProfile.API.Query[slick.jdbc.JdbcProfile.API.Table[_],SpendingInfoDb,Seq]"></a>
       <span class="permalink">
@@ -619,6 +603,60 @@
       </span>
       
       <p class="shortcomment cmt">Finds the rows that correlate to the given primary keys</p><div class="fullcomment"><div class="comment cmt"><p>Finds the rows that correlate to the given primary keys</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../db/CRUDAutoInc.html" class="extype" name="org.bitcoins.db.CRUDAutoInc">CRUDAutoInc</a> → <a href="../../db/CRUD.html" class="extype" name="org.bitcoins.db.CRUD">CRUD</a></dd></dl></div>
+    </li><li name="org.bitcoins.wallet.models.SpendingInfoDAO#findOutputsBeingSpent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findOutputsBeingSpent(tx:org.bitcoins.core.protocol.transaction.Transaction):scala.concurrent.Future[Seq[org.bitcoins.wallet.models.SpendingInfoDb]]"></a><a id="findOutputsBeingSpent(Transaction):Future[Seq[SpendingInfoDb]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/models/SpendingInfoDAO.html#findOutputsBeingSpent(tx:org.bitcoins.core.protocol.transaction.Transaction):scala.concurrent.Future[Seq[org.bitcoins.wallet.models.SpendingInfoDb]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findOutputsBeingSpent</span><span class="params">(<span name="tx">tx: <a href="../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Finds all the outputs being spent in the given
+transaction
+</p>
+    </li><li name="org.bitcoins.wallet.models.SpendingInfoDAO#findTx" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findTx(txid:org.bitcoins.core.crypto.DoubleSha256DigestBE):scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]"></a><a id="findTx(DoubleSha256DigestBE):Future[Vector[SpendingInfoDb]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/models/SpendingInfoDAO.html#findTx(txid:org.bitcoins.core.crypto.DoubleSha256DigestBE):scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findTx</span><span class="params">(<span name="txid">txid: <a href="../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Fetches all the incoming TXOs in our DB that are in
+the transaction with the given TXID
+</p>
+    </li><li name="org.bitcoins.wallet.models.SpendingInfoDAO#findTx" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findTx(tx:org.bitcoins.core.protocol.transaction.Transaction):scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]"></a><a id="findTx(Transaction):Future[Vector[SpendingInfoDb]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/models/SpendingInfoDAO.html#findTx(tx:org.bitcoins.core.protocol.transaction.Transaction):scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findTx</span><span class="params">(<span name="tx">tx: <a href="../../core/protocol/transaction/Transaction.html" class="extype" name="org.bitcoins.core.protocol.transaction.Transaction">Transaction</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Fetches all the incoming TXOs in our DB that are in
+the given TX
+</p>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -672,6 +710,25 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../core/util/BitcoinSLogger.html" class="extype" name="org.bitcoins.core.util.BitcoinSLogger">BitcoinSLogger</a></dd></dl></div>
+    </li><li name="org.bitcoins.wallet.models.SpendingInfoDAO#markAsSpent" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="markAsSpent(outputs:Seq[org.bitcoins.core.protocol.transaction.TransactionOutput]):scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]"></a><a id="markAsSpent(Seq[TransactionOutput]):Future[Vector[SpendingInfoDb]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/models/SpendingInfoDAO.html#markAsSpent(outputs:Seq[org.bitcoins.core.protocol.transaction.TransactionOutput]):scala.concurrent.Future[Vector[org.bitcoins.wallet.models.SpendingInfoDb]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">markAsSpent</span><span class="params">(<span name="outputs">outputs: <a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../core/protocol/transaction/TransactionOutput.html" class="extype" name="org.bitcoins.core.protocol.transaction.TransactionOutput">TransactionOutput</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Marks the given outputs as spent.</p><div class="fullcomment"><div class="comment cmt"><p>Marks the given outputs as spent. Assumes that all the
+given outputs are ours, throwing if numbers aren't
+confirming that.
+</p></div></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -914,6 +971,23 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="org.bitcoins.wallet.models.SpendingInfoDAO#withAddress" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withAddress(txid:org.bitcoins.core.crypto.DoubleSha256DigestBE):scala.concurrent.Future[Vector[(org.bitcoins.wallet.models.SpendingInfoDb,org.bitcoins.wallet.models.AddressDb)]]"></a><a id="withAddress(DoubleSha256DigestBE):Future[Vector[(SpendingInfoDb,AddressDb)]]"></a>
+      <span class="permalink">
+      <a href="../../../../org/bitcoins/wallet/models/SpendingInfoDAO.html#withAddress(txid:org.bitcoins.core.crypto.DoubleSha256DigestBE):scala.concurrent.Future[Vector[(org.bitcoins.wallet.models.SpendingInfoDb,org.bitcoins.wallet.models.AddressDb)]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withAddress</span><span class="params">(<span name="txid">txid: <a href="../../core/crypto/DoubleSha256DigestBE.html" class="extype" name="org.bitcoins.core.crypto.DoubleSha256DigestBE">DoubleSha256DigestBE</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.8/scala/concurrent/Future.html#scala.concurrent.Future" class="extype" name="scala.concurrent.Future">Future</a>[<a href="../../../../scala/index.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[(<a href="SpendingInfoDb.html" class="extype" name="org.bitcoins.wallet.models.SpendingInfoDb">SpendingInfoDb</a>, <a href="AddressDb.html" class="extype" name="org.bitcoins.wallet.models.AddressDb">AddressDb</a>)]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Given a TXID, fetches all incoming TXOs and the address the TXO pays to
+</p>
     </li>
               </ol>
             </div>
