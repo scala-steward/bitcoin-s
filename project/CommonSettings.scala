@@ -279,7 +279,45 @@ object CommonSettings {
 
   lazy val dbCommonsJlinkIgnore = {
     // we don't use android
-    is
+    Vector(
+      "org.flywaydb.core.api.android" -> "android.content",
+      "org.flywaydb.core.internal.logging.android" -> "android.util",
+      "org.flywaydb.core.internal.resource.android" -> "android.content.res",
+      "org.flywaydb.core.internal.scanner.android" -> "android.content",
+      "org.flywaydb.core.internal.scanner.android" -> "android.content.pm",
+      "org.flywaydb.core.internal.scanner.android" -> "android.content.res",
+      "org.flywaydb.core.internal.scanner.android" -> "dalvik.system",
+      // we don't use hibernate
+      "com.zaxxer.hikari.hibernate" -> "org.hibernate",
+      // we don't ship with support for any aws products
+      "org.flywaydb.core.internal.resource.s3" -> "software.amazon.awssdk.awscore.exception",
+      "org.flywaydb.core.internal.resource.s3" -> "software.amazon.awssdk.core",
+      "org.flywaydb.core.internal.resource.s3" -> "software.amazon.awssdk.services.s3",
+      "org.flywaydb.core.internal.resource.s3" -> "software.amazon.awssdk.services.s3.model",
+      "org.flywaydb.core.internal.scanner.cloud.s3" -> "software.amazon.awssdk.core.exception",
+      "org.flywaydb.core.internal.scanner.cloud.s3" -> "software.amazon.awssdk.services.s3",
+      "org.flywaydb.core.internal.scanner.cloud.s3" -> "software.amazon.awssdk.services.s3.model",
+      "org.flywaydb.core.api.configuration" -> "software.amazon.awssdk.services.s3",
+      "org.flywaydb.core.internal.configuration" -> "org.apache.commons.text.similarity",
+      // we don't use oracle database products
+      "org.flywaydb.core.internal.database.oracle" -> "oracle.jdbc",
+      // we don't use jboss
+      "org.flywaydb.core.internal.scanner.classpath.jboss" -> "org.jboss.vfs",
+      "org.flywaydb.core.internal.logging.log4j2" -> "org.apache.logging.log4j",
+      "com.zaxxer.hikari.metrics.micrometer" -> "io.micrometer.core.instrument",
+      "com.zaxxer.hikari.pool" -> "io.micrometer.core.instrument",
+      "slick.jdbc" -> "javax.xml.bind",
+      "com.zaxxer.hikari.metrics.prometheus" -> "io.prometheus.client",
+      "com.zaxxer.hikari.util" -> "javassist",
+      "com.zaxxer.hikari.util" -> "javassist.bytecode",
+      // postgres requires this weird waffle dep
+      "waffle.jaas" -> "java.security.acl",
+      // no native image support for now
+      // https://github.com/xerial/sqlite-jdbc/commit/6f426839c56f3924be6cad8920d9192400a37d5f#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5R117
+      "org.sqlite.nativeimage" -> "org.graalvm.nativeimage.hosted",
+      // we use slf4j, not apache commons so ignore it
+      "org.flywaydb.core.internal.logging.apachecommons" -> "org.apache.commons.logging"
+    )
   }
 
   lazy val loggingJlinkIgnore = {
