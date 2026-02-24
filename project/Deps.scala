@@ -35,7 +35,7 @@ object Deps {
     val scodecV = "1.2.4"
     val junitV = "0.13.3"
     val nativeLoaderV = "2.5.0"
-    val typesafeConfigV = "1.4.5"
+    val typesafeConfigV = "1.4.6"
 
     val flywayV =
       "11.8.0" // https://flywaydb.org/documentation/learnmore/releaseNotes
