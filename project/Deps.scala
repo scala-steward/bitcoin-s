@@ -19,7 +19,7 @@ object Deps {
     val xzV = "1.12"
 
     val scalacheck = "1.19.0"
-    val scalaTest = "3.2.19" // https://www.scalatest.org/
+    val scalaTest = "3.2.20" // https://www.scalatest.org/
 
     val scalaTestPlus =
       "3.2.18.0" // super annoying... https://oss.sonatype.org/content/groups/public/org/scalatestplus/
