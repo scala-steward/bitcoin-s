@@ -4,7 +4,7 @@ import sbt.*
 object Deps {
 
   object V {
-    val antV = "1.10.16"
+    val antV = "1.10.17"
 
     val bouncyCastle = "1.83"
     val dropWizardMetrics5V = "5.0.6"
