@@ -21,7 +21,6 @@ import org.bitcoins.core.wallet.fee.FeeUnit
 import org.bitcoins.crypto.{DoubleSha256DigestBE, ECPublicKey, StringFactory}
 import org.bitcoins.rpc.client.v18.V18AssortedRpc
 import org.bitcoins.rpc.client.v20.V20MultisigRpc
-import org.bitcoins.rpc.client.v28.BitcoindV28RpcClient
 import org.bitcoins.rpc.client.v29.BitcoindV29RpcClient
 import org.bitcoins.rpc.client.v30.BitcoindV30RpcClient
 import org.bitcoins.rpc.client.v31.BitcoindV31RpcClient
@@ -353,7 +352,6 @@ object BitcoindRpcClient {
       implicit system: ActorSystem
   ): BitcoindRpcClient = {
     val bitcoind = version match {
-      case BitcoindVersion.V28 => BitcoindV28RpcClient(instance)
       case BitcoindVersion.V29 => BitcoindV29RpcClient(instance)
       case BitcoindVersion.V30 => BitcoindV30RpcClient(instance)
       case BitcoindVersion.V31 => BitcoindV31RpcClient(instance)
@@ -372,7 +370,6 @@ object BitcoindRpcClient {
       implicit system: ActorSystem
   ): BitcoindRpcClient = {
     val bitcoind = version match {
-      case BitcoindVersion.V28 => new BitcoindV28RpcClient(instance)
       case BitcoindVersion.V29 => new BitcoindV29RpcClient(instance)
       case BitcoindVersion.V30 => new BitcoindV30RpcClient(instance)
       case BitcoindVersion.V31 => new BitcoindV31RpcClient(instance)
@@ -398,10 +395,6 @@ object BitcoindVersion
     Vector(V31, V30, V29)
 
   val known: Vector[BitcoindVersion] = standard
-
-  case object V28 extends BitcoindVersion {
-    override def toString: String = "v28.2"
-  }
 
   case object V29 extends BitcoindVersion {
     override def toString: String = "v29.2"
@@ -433,7 +426,6 @@ object BitcoindVersion
   def fromNetworkVersion(int: Int): BitcoindVersion = {
     // need to translate the int 210100 (as an example) to a BitcoindVersion
     int.toString.substring(0, 2) match {
-      case "28" => V28
       case "29" => V29
       case "30" => V30
       case "31" => V31
