@@ -32,7 +32,7 @@ object Deps {
     val akkaStreamv = "1.6.0"
     val pekkoGrpcV = "1.2.0"
     val jUnixSocketV = "2.10.1"
-    val scodecV = "1.2.4"
+    val scodecV = "1.2.5"
     val junitV = "0.13.3"
     val nativeLoaderV = "2.5.0"
     val typesafeConfigV = "1.4.8"
