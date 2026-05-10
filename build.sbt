@@ -225,6 +225,8 @@ lazy val `bitcoin-s` = project
     oracleServer,
     oracleServerTest,
     serverRoutes,
+    serverGrpc,
+    serverGrpcTest,
     lndRpc,
     lndRpcTest,
     tor,
@@ -279,6 +281,8 @@ lazy val `bitcoin-s` = project
     oracleServer,
     oracleServerTest,
     serverRoutes,
+    serverGrpc,
+    serverGrpcTest,
     lndRpc,
     lndRpcTest,
     tor,
@@ -410,7 +414,19 @@ lazy val serverRoutes = project
   .settings(CommonSettings.prodSettings: _*)
   .settings(name := "bitcoin-s-server-routes")
   .settings(libraryDependencies ++= Deps.serverRoutes)
-  .dependsOn(appCommons, dbCommons)
+  .dependsOn(appCommons, dbCommons, serverGrpc)
+
+lazy val serverGrpc = project
+  .in(file("app/server-grpc"))
+  .settings(scalacOptions += "-Xsource:3")
+  .dependsOn(coreJVM, dbCommons)
+
+lazy val serverGrpcTest = project
+  .in(file("app/server-grpc-test"))
+  .settings(scalacOptions += "-Xsource:3")
+  .settings(CommonSettings.testSettings: _*)
+  .settings(libraryDependencies ++= Deps.serverGrpcTest)
+  .dependsOn(serverGrpc, testkit)
 
 lazy val appServer = project
   .in(file("app/server"))
@@ -433,7 +449,8 @@ lazy val appServer = project
     dlcNode,
     bitcoindRpc,
     feeProvider,
-    zmq
+    zmq,
+    serverGrpc
   )
   .enablePlugins(JavaAppPackaging, DockerPlugin, JlinkPlugin,
     //needed for windows, else we have the 'The input line is too long` on windows OS
@@ -686,7 +703,8 @@ lazy val testkit = project
     dlcWallet,
     zmq,
     dlcOracle,
-    testkitCoreJVM
+    testkitCoreJVM,
+    serverGrpc
   )
 
 lazy val docs = project
