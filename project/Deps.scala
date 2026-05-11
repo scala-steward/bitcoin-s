@@ -96,21 +96,27 @@ object Deps {
     val compressLzfV = "1.1.3" // https://github.com/ning/compress
     val lz4JavaV = "1.8.0" // https://github.com/lz4/lz4-java
     val lzmaJavaV = "1.3" // https://github.com/jponge/lzma-java
-    val jbossMarshallingV = "2.2.3.Final" // https://github.com/jboss-remoting/jboss-marshalling
+    val jbossMarshallingV =
+      "2.2.3.Final" // https://github.com/jboss-remoting/jboss-marshalling
     val protobufNanoV = "3.0.0-alpha-7" // https://github.com/google/protobuf
     val conscryptV = "2.5.2" // https://github.com/google/conscrypt
-    val jettyAlpnV = "1.1.3.v20160715" // https://github.com/jetty-project/jetty-alpn
-    val jettyNpnV = "1.1.1.v20141010" // https://github.com/jetty-project/jetty-npn
+    val jettyAlpnV =
+      "1.1.3.v20160715" // https://github.com/jetty-project/jetty-alpn
+    val jettyNpnV =
+      "1.1.1.v20141010" // https://github.com/jetty-project/jetty-npn
     val annotationsV = "26.0.2" // https://github.com/JetBrains/java-annotations
     val blockhoundV = "1.0.11.RELEASE" // https://github.com/reactor/BlockHound
     val commonsLoggingV = "1.3.5" // https://github.com/apache/commons-logging
-    val log4j2V = "2.25.2" // https://github.com/apache/logging-log4j2
+    val log4j2V = "2.25.4" // https://github.com/apache/logging-log4j2
     val nettyV = "4.1.127.Final" // https://github.com/netty/netty
-    val jbossModulesV = "2.1.6.Final" // https://github.com/jboss-modules/jboss-modules
+    val jbossModulesV =
+      "2.1.6.Final" // https://github.com/jboss-modules/jboss-modules
     val reactorCoreV = "3.7.12" // https://github.com/reactor/reactor-core
     val rxjava2V = "2.2.21" // https://github.com/ReactiveX/RxJava
-    val micrometerCoreV = "1.14.12" // https://github.com/micrometer-metrics/micrometer
-    val micrometerContextV = "1.1.3" // https://github.com/micrometer-metrics/context-propagation
+    val micrometerCoreV =
+      "1.14.12" // https://github.com/micrometer-metrics/micrometer
+    val micrometerContextV =
+      "1.1.3" // https://github.com/micrometer-metrics/context-propagation
   }
 
   object Compile {
