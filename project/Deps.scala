@@ -105,7 +105,7 @@ object Deps {
     val jettyNpnV =
       "1.1.1.v20141010" // https://github.com/jetty-project/jetty-npn
     val annotationsV = "26.0.2" // https://github.com/JetBrains/java-annotations
-    val blockhoundV = "1.0.11.RELEASE" // https://github.com/reactor/BlockHound
+    val blockhoundV = "1.0.16.RELEASE" // https://github.com/reactor/BlockHound
     val commonsLoggingV = "1.3.5" // https://github.com/apache/commons-logging
     val log4j2V = "2.25.2" // https://github.com/apache/logging-log4j2
     val nettyV = "4.1.127.Final" // https://github.com/netty/netty
