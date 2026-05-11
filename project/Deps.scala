@@ -94,7 +94,7 @@ object Deps {
     val zstdJniV = "1.5.7-4" // https://github.com/luben/zstd-jni
     val jzlibV = "1.1.3" // https://github.com/ymnk/jzlib
     val compressLzfV = "1.2.0" // https://github.com/ning/compress
-    val lz4JavaV = "1.8.0" // https://github.com/lz4/lz4-java
+    val lz4JavaV = "1.8.1" // https://github.com/lz4/lz4-java
     val lzmaJavaV = "1.3" // https://github.com/jponge/lzma-java
     val jbossMarshallingV =
       "2.2.3.Final" // https://github.com/jboss-remoting/jboss-marshalling
