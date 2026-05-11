@@ -103,7 +103,7 @@ object Deps {
     val jettyAlpnV =
       "1.1.3.v20160715" // https://github.com/jetty-project/jetty-alpn
     val jettyNpnV =
-      "1.1.1.v20141010" // https://github.com/jetty-project/jetty-npn
+      "8.1.2.v20120308" // https://github.com/jetty-project/jetty-npn
     val annotationsV = "26.0.2" // https://github.com/JetBrains/java-annotations
     val blockhoundV = "1.0.16.RELEASE" // https://github.com/reactor/BlockHound
     val commonsLoggingV = "1.3.5" // https://github.com/apache/commons-logging
