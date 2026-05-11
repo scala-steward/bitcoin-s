@@ -116,7 +116,7 @@ object Deps {
     val micrometerCoreV =
       "1.14.14" // https://github.com/micrometer-metrics/micrometer
     val micrometerContextV =
-      "1.1.3" // https://github.com/micrometer-metrics/context-propagation
+      "1.1.4" // https://github.com/micrometer-metrics/context-propagation
   }
 
   object Compile {
