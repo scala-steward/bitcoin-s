@@ -90,10 +90,10 @@ object Deps {
     val waffleJnaV = "3.6.0"
 
     // netty optional deps surfaced by jlink static analysis via grpc-netty-shaded
-    val brotli4jV = "1.20.0" // https://github.com/aayushatharva/brotli4j
+    val brotli4jV = "1.23.0" // https://github.com/aayushatharva/brotli4j
     val zstdJniV = "1.5.7-4" // https://github.com/luben/zstd-jni
     val jzlibV = "1.1.3" // https://github.com/ymnk/jzlib
-    val compressLzfV = "1.1.3" // https://github.com/ning/compress
+    val compressLzfV = "1.2.0" // https://github.com/ning/compress
     val lz4JavaV = "1.8.1" // https://github.com/lz4/lz4-java
     val lzmaJavaV = "1.3" // https://github.com/jponge/lzma-java
     val jbossMarshallingV =
@@ -105,7 +105,7 @@ object Deps {
     val jettyNpnV =
       "1.1.1.v20141010" // https://github.com/jetty-project/jetty-npn
     val annotationsV = "26.0.2" // https://github.com/JetBrains/java-annotations
-    val blockhoundV = "1.0.11.RELEASE" // https://github.com/reactor/BlockHound
+    val blockhoundV = "1.0.16.RELEASE" // https://github.com/reactor/BlockHound
     val commonsLoggingV = "1.3.5" // https://github.com/apache/commons-logging
     val log4j2V = "2.25.2" // https://github.com/apache/logging-log4j2
     val nettyV = "4.1.127.Final" // https://github.com/netty/netty
