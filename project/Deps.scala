@@ -111,7 +111,7 @@ object Deps {
     val nettyV = "4.1.127.Final" // https://github.com/netty/netty
     val jbossModulesV =
       "2.1.6.Final" // https://github.com/jboss-modules/jboss-modules
-    val reactorCoreV = "3.7.12" // https://github.com/reactor/reactor-core
+    val reactorCoreV = "3.7.18" // https://github.com/reactor/reactor-core
     val rxjava2V = "2.2.21" // https://github.com/ReactiveX/RxJava
     val micrometerCoreV =
       "1.14.12" // https://github.com/micrometer-metrics/micrometer
