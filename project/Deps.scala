@@ -114,7 +114,7 @@ object Deps {
     val reactorCoreV = "3.7.18" // https://github.com/reactor/reactor-core
     val rxjava2V = "2.2.21" // https://github.com/ReactiveX/RxJava
     val micrometerCoreV =
-      "1.14.12" // https://github.com/micrometer-metrics/micrometer
+      "1.14.14" // https://github.com/micrometer-metrics/micrometer
     val micrometerContextV =
       "1.1.3" // https://github.com/micrometer-metrics/context-propagation
   }
