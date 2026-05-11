@@ -98,7 +98,8 @@ object Deps {
     val lzmaJavaV = "1.3" // https://github.com/jponge/lzma-java
     val jbossMarshallingV =
       "2.3.0" // https://github.com/jboss-remoting/jboss-marshalling
-    val protobufNanoV = "3.0.0-alpha-7" // https://github.com/google/protobuf
+    val protobufNanoV = "3.1.0" // https://github.com/google/protobuf
+
     val conscryptV = "2.5.2" // https://github.com/google/conscrypt
     val jettyAlpnV =
       "1.1.3.v20160715" // https://github.com/jetty-project/jetty-alpn
@@ -111,6 +112,7 @@ object Deps {
     val nettyV = "4.1.127.Final" // https://github.com/netty/netty
     val jbossModulesV =
       "2.1.6.Final" // https://github.com/jboss-modules/jboss-modules
+
     val reactorCoreV = "3.7.18" // https://github.com/reactor/reactor-core
     val rxjava2V = "2.2.21" // https://github.com/ReactiveX/RxJava
     val micrometerCoreV =
