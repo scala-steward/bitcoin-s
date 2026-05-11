@@ -97,7 +97,7 @@ object Deps {
     val lz4JavaV = "1.8.1" // https://github.com/lz4/lz4-java
     val lzmaJavaV = "1.3" // https://github.com/jponge/lzma-java
     val jbossMarshallingV =
-      "2.2.3.Final" // https://github.com/jboss-remoting/jboss-marshalling
+      "2.3.0" // https://github.com/jboss-remoting/jboss-marshalling
     val protobufNanoV = "3.0.0-alpha-7" // https://github.com/google/protobuf
     val conscryptV = "2.5.2" // https://github.com/google/conscrypt
     val jettyAlpnV =
