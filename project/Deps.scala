@@ -107,7 +107,7 @@ object Deps {
       "8.1.2.v20120308" // https://github.com/jetty-project/jetty-npn
     val annotationsV = "26.0.2" // https://github.com/JetBrains/java-annotations
     val blockhoundV = "1.0.16.RELEASE" // https://github.com/reactor/BlockHound
-    val commonsLoggingV = "1.3.5" // https://github.com/apache/commons-logging
+    val commonsLoggingV = "1.3.6" // https://github.com/apache/commons-logging
     val log4j2V = "2.25.4" // https://github.com/apache/logging-log4j2
     val nettyV = "4.1.127.Final" // https://github.com/netty/netty
     val jbossModulesV =
