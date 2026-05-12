@@ -112,7 +112,7 @@ object Deps {
     val log4j2V = "2.25.4" // https://github.com/apache/logging-log4j2
     val nettyV = "4.1.133.Final" // https://github.com/netty/netty
     val jbossModulesV =
-      "2.3.0" // https://github.com/jboss-modules/jboss-modules
+      jbossMarshallingV // https://github.com/jboss-modules/jboss-modules
 
     val reactorCoreV = "3.7.18" // https://github.com/reactor/reactor-core
     val rxjava2V = "2.2.21" // https://github.com/ReactiveX/RxJava
