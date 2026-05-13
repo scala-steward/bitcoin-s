@@ -365,6 +365,7 @@ object CommonSettings {
       "io.micrometer.core.instrument.binder.jpa" -> "javax.persistence",
       "io.micrometer.core.instrument.binder.jpa" -> "org.hibernate",
       "io.micrometer.core.instrument.binder.kafka" -> "org.apache.kafka",
+      "io.micrometer.core.instrument.binder.netty4" -> "io.netty.channel",
       "io.micrometer.core.instrument.binder.logging" -> "org.apache.logging.log4j.core",
       "io.micrometer.core.instrument.binder.mongodb" -> "com.mongodb",
       "io.micrometer.core.instrument.binder.mongodb" -> "org.bson",
@@ -423,9 +424,10 @@ object CommonSettings {
     )
   }
 
-  /** Netty includes optional Graal substitution annotation references for native
-    * image support. We do not ship native-image classes in our JVM runtimes, so
-    * these missing packages are safe to ignore for jlink static analysis.
+  /** Netty includes optional Graal substitution annotation references for
+    * native image support. We do not ship native-image classes in our JVM
+    * runtimes, so these missing packages are safe to ignore for jlink static
+    * analysis.
     */
   private val nettySvmJlinkIgnore = {
     Vector(
@@ -462,15 +464,14 @@ object CommonSettings {
       .++(cryptoJlinkIgnore)
       .++(byteBuddyJlinkIgnore)
       .++(nettySvmJlinkIgnore)
-      .++(
-        Vector(
-          // https://github.com/janino-compiler/janino/blob/f6bb39d3137ad2e99b41ecc48aaaf8ab2644bd1c/janino/pom.xml#L37
-          "org.codehaus.janino" -> "org.apache.tools.ant",
-          "com.github.benmanes.caffeine" -> "javax.annotation",
-          "com.github.benmanes.caffeine.cache" -> "javax.annotation",
-          "com.github.benmanes.caffeine.cache.stats" -> "javax.annotation",
-          "monix.execution.misc" -> "scala.tools.nsc"
-        ))
+      .++(Vector(
+        // https://github.com/janino-compiler/janino/blob/f6bb39d3137ad2e99b41ecc48aaaf8ab2644bd1c/janino/pom.xml#L37
+        "org.codehaus.janino" -> "org.apache.tools.ant",
+        "com.github.benmanes.caffeine" -> "javax.annotation",
+        "com.github.benmanes.caffeine.cache" -> "javax.annotation",
+        "com.github.benmanes.caffeine.cache.stats" -> "javax.annotation",
+        "monix.execution.misc" -> "scala.tools.nsc"
+      ))
     JlinkIgnore.byPackagePrefix(appServerIgnore: _*)
   }
 
